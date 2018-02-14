@@ -1,0 +1,4 @@
+baseURL = "http://guías.the-cocktail.com/"
+languageCode = "es-ES"
+title = "Guías TCK"
+theme = "learn"
