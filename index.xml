@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guías de referencia TCK on Guías TCK</title>
+    <link>http://gu%C3%ADas.the-cocktail.com/</link>
+    <description>Recent content in Guías de referencia TCK on Guías TCK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    
+	<atom:link href="http://gu%C3%ADas.the-cocktail.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuración</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/git/configuracion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/git/configuracion/</guid>
+      <description>Antes de ponernos a trabajar con ningún repositorio, debemos de configurar las opciones generales de Git para nuestro flujo de trabajo.
+ Configura nombre y correo asociados a los commits:  $ git config --global user.name ‘Nombre’ $ git config --global user.email ‘usuario@dominio.com’   Configuramos las opciones por defecto para pull y merge.  $ git config --global merge.ff false $ git config --global branch.autosetuprebase always  Con merge.ff false, hacemos que todos los merges sean &amp;ndash;no-ff, es decir que siempre se genere un nuevo commit al hacer un merge.</description>
+    </item>
+    
+    <item>
+      <title>Proyectos</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/test/proyectos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/test/proyectos/</guid>
+      <description>Proyectos existentes  Identificar funcionalidades críticas para el negocio, Escribir historias de usuario de esas funcionalidades, Implementar los tests de integración de las historias de usuario.  En un proyecto que ya está funcionando y en el que por tanto no vamos a hacer TDD, el objetivo es añadir tests de integración para funcionalidades críticas y así evitar regresiones.
+Idealmente es el cliente o en su defecto el Product Owner quien debe identificar dichas funcionalidades y escribir historias de usuario que el equipo de desarrollo se encargará de implementar como especificaciones ejecutables en forma de tests de integración.</description>
+    </item>
+    
+    <item>
+      <title>Glosario</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/test/glosario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/test/glosario/</guid>
+      <description>Cobertura Es una métrica que indica qué porcentaje del código de la aplicación está siendo probado por los tests. Hay que tener cuidado con ella porque puede generar una falsa sensación de seguridad: una cobertura alta no es sinónimo ni de robustez del código ni de calidad de los tests, pero al mismo tiempo probablemente no queremos que haya una cobertura baja.
+No obstante, hay que tener en cuenta que en el testing no se trata de llegar al 100% de cobertura.</description>
+    </item>
+    
+    <item>
+      <title>Reglas generales</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/git/reglas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/git/reglas/</guid>
+      <description>Clientes Recomendamos encarecidamente no usar clientes gráficos hasta no tener un control total de los comandos básicos en consola.
+Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente las acciones. Puede haber clientes que implementen ciertas acciones de forma distinta a la que esperamos, ocasionando situaciones inesperadas.
+Ramas  Escribe los nombre en inglés y sólo con letras y números, nada de acentos, ñ&amp;rsquo;s, # o caracteres que puedan dar problemas.</description>
+    </item>
+    
+    <item>
+      <title>Buenas prácticas</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/test/buenas-practicas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/test/buenas-practicas/</guid>
+      <description>Evitar el acoplamiento en los steps Imaginemos que tenemos un step:
+ Dado un usuario registrado  Aquí hay dos enfoques diferentes a la hora de implementarlo:
+ Interactuar con la aplicación y registrar el usuario, rellenando el formulario de registro, pinchando en el mail de verificación, etc. ruby step &amp;quot;un usuario registrado&amp;quot; do visit home_path fill_in &amp;quot;Username&amp;quot;, with: &amp;quot;JohnDoe&amp;quot; fill_in &amp;quot;Password&amp;quot;, with: &amp;quot;mypass&amp;quot; fill_in &amp;quot;Password confirmation&amp;quot;, with: &amp;quot;mypass&amp;quot; click_button &amp;quot;Sign up&amp;quot; end  Crear el usuario en la base de datos directamente usando el modelo de la aplicación.</description>
+    </item>
+    
+    <item>
+      <title>Flujo de trabajo</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/git/flujo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/git/flujo/</guid>
+      <description>Por lo general los proyectos tendrán como mínimo dos ramas, master y staging. La rama master es la que usan los servidores de producción para los despliegues, mientras que staging es la de los servidores de prueba.
+Habrá proyectos más sencillos, en los que el concepto de staging no haga falta. En ese caso obviaremos las partes que afecten a staging pero seguiremos aplicando el resto del flujo de la misma forma.</description>
+    </item>
+    
+    <item>
+      <title>Casos reales</title>
+      <link>http://gu%C3%ADas.the-cocktail.com/git/casos-reales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gu%C3%ADas.the-cocktail.com/git/casos-reales/</guid>
+      <description> Describimos aquí una serie de casos &amp;ldquo;reales&amp;rdquo; (puede que alguno esté dramatizado), como ejemplo de situaciones complicadas que se pueden dar si no si no tenemos cuidado al trabajar con el repositorio.
+Revert de staging Conflicto y forzado Commits en el limbo 3 meses sin subir </description>
+    </item>
+    
+  </channel>
+</rss>
