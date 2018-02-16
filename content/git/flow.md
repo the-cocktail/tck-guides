@@ -54,6 +54,80 @@ En casos muy particules en los que un proyecto tenga despliegues de desarrollos 
 
 ![Releases](/images/git/releases.png "Releases")
 
+### _Pull requests_
+
+Haremos siempre _pull requests_ de nuestras ramas a la hora de unificar nuestros cambios con resto del código.
+
+Dado que el objetivo principal de las _pull requests_ es que el resto del equipo haga una revisión del código, deberemos de asegurarnos con el encargado del proyecto de que exista una persona al menos que vaya a poder revisarla. En caso contraro la _pull requests_ pierde el sentido, las _pull requests_ no son un diario de desarrollo.
+
+Consideraciones generales:
+
+* Las _pull requests_ irán contra las ramas encargadas de la unificación del código _master_, _integration_, _release_... en cualquier caso nunca contra _staging_.
+* Las _pull requests_ no son una interfaz gráfica para hacer un _merge_.
+* Escribir un título descriptivo e indicar el ticket: `[Id del ticket] Título del ticket`
+* Utilizar etiquetas para identificar el tipo y el estado: WIP, feature...
+* Asignar los revisores adecuados.
+* Si el proyecto tiene releases planificadas, usar las milestones para saber a cual corresponde. Por ejemplo una milestone con la fecha planificada del despliegue.
+
+Pasos para la revisión:
+
+1. Leer con clama la descripción.
+2. Probar los cambios en local y ver que funciona como se explica.
+3. Revisar el código de los commits.
+4. Si aplica, intentar dar feedback constructivo educadamente.
+
+#### Plantillas
+
+Todos los proyectos deben de contener las siguientes plantilla _pull requests_ en una carpeta .github. Si aplica también se puede hacer una para _issues_.
+
+Plantilla para _pull requests_, fichero **PULL_REQUEST_TEMPLATE.md**:
+
+```md
+[Ticket de referencia](SUSTITUIR_POR_URL_DE_TICKET)
+
+## Resumen
+
+Escribir aquí un resumen o listado breve de cosas que añade o cambia esta PR. Utilizar una check list para seguir el progreso.
+
+- [X] Tarea 1.
+- [ ] Tarea 2.
+- [ ] Tarea 3.
+
+## Pruebas
+
+Ejemplos de como probar los cambios: pasos para replicar un problema, snippets de código para ejecutar en consola...
+
+## Despliegue
+
+Escribir aquí qué comandos y consideraciones que son necesarios para su despliegue (por ejemplo, borrar caché).
+Si no hace falta ejecutar nada, se puede borrar esta parte.
+```
+
+### _Tags_
+
+Cada vez que se haga un despliegue, crearemos un tag de git con la la fecha del despliegue. Si se hacen varios despliegues el mismo día, los diferenciaremos con un número
+
+```
+20180101
+20180101-2
+20180213
+20180213-2
+20180213-3
+```
+
+De esta formas crearemos puntos de control en el repositorio de todo el código desplegado.
+
+Independientemente se podrán llevar tags versionadas como
+
+### _Hooks_ [WIP]
+
+Añadiremos hooks de ayuda por defecto en nuestros proyectos:
+
+* Validaciones _staging_ (nuevas ramas, merges).
+* Avisos de higiene (borrar ramas ya mergeadas a master).
+* Avisos de mantenimiento (ramas desactualizadas).
+
+Los hooks no deben depender del proyecto, sólo al propio repositorio, por lo tanto hooks que pasen pruebas, formateos y demás que dependan del stack de cada uno, deberan de ser gestionados personalmente.
 
 
 Ejemplo de flujo de trabajo con una nueva funcionalidad:
