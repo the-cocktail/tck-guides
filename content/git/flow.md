@@ -18,6 +18,42 @@ Consideraciones generales:
 * Usa [tags](http://git-scm.com/book/es/v2/Fundamentos-de-Git-Etiquetado) para marcar puntos importates del repositorio.
 * **Nunca reescribir la historia ya publicada.** Ciertos comandos como el rebase pueden reescribir la historia de los commits. Si esos commits ya estaban publicados, nunca debemos de vovler a publicarlos ya que afectaremos al resto de compañeros que los tengan en su repositorio local.
 * En algunos casos como usar un rebase interactivo (git rebase -i) para dejar la historia más limpia, hacerlo siempre con ramas personales que no estén publicadas.
+## Flujos de trabajo
+
+Dada la gran cantidad de proyectos distintos y clientes con distintas necesidades no podemos tener un flujo común para todos. El encargado de cada proyecto deberá determinar el flujo de trabajo más óptimo según el estado en el que se encuentra el proyecto, por ejemplo un proyecto en mantenimiento con poca carga de trabajo no requerirá el mismo flujo que un proyecto con constantes evolutivos y varias personas con dedicación total.
+
+En este apartado describiremos distintos flujos para casos a mínimo y máximos:
+
+### Básico
+
+En un flujo básico debemos crear una nueva rama (según las reglas) para cada nueva tarea que vayamos a realizar. Nuestro trabajo de forma particular deberá ir siempre en una rama independiente, nunca trabajaremos directamente sobre una rama con otro usuario.
+
+Una vel la tarea este realizada procederemos según las reglas básicas, primero merge a staging para probar, finalmente _pull request_ a master y despliegue tras aceptación.
+
+![Flujo básico](/images/git/basic.png "Básico")
+
+### Máximos
+
+Con multiples desarrolladores, multiples funcionalidades y tareas de mantenimiento en paralelo y múltiples revisiones de usuario.
+
+Usar una rama de desarrollo o integración para unificar todo el código antes de llevarlo a master.
+
+![Desarrollo](/images/git/development.png "Desarrollo")
+
+Las nuevas funcionalidades se van llevando a staging para probar y con _pull request_ a desarrollo o integración.
+
+**TODO:** Corregir, la rama siempre debe de salir de master y añadir staging.
+
+![Funcionalidades](/images/git/features.png "Funcionalidades")
+
+Los fixes urgentes deben salir de master, volver a master (con _pull request_ y tageo tras despliegue) y actualizarse en desarrollo o integración.
+
+![Fixes](/images/git/fixes.png "Fixes")
+
+En casos muy particules en los que un proyecto tenga despliegues de desarrollos muy planificados, puede llevarse una rama de release donde concentrar solo esos desarrollos. Por ejemplo, podría darse el caso de tener una máquina específica para desplegar ese desarrollo de forma aislada del resto para una validación específica del cliente.
+
+![Releases](/images/git/releases.png "Releases")
+
 
 
 Ejemplo de flujo de trabajo con una nueva funcionalidad:
