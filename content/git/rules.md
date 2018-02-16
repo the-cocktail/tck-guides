@@ -4,6 +4,12 @@ slug: reglas
 weight: 20
 ---
 
+## Clientes
+
+Recomendamos encarecidamente no usar clientes gráficos hasta no tener un control total de los comandos básicos en consola.
+
+Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente las acciones. Puede haber clientes que implementen ciertas acciones de forma distinta a la que esperamos, ocasionando situaciones inesperadas.
+## Ramas
 
 * Escribe los nombre en inglés y sólo con letras y números, nada de acentos, ñ's, # o caracteres que puedan dar problemas.
 
@@ -98,3 +104,13 @@ weight: 20
   Información sacada de http://git-scm.com/book/es/v1/Git-en-entornos-distribuidos-Contribuyendo-a-un-proyecto
   ```
 * Por esto, es más recomendable usar un editor para escribir los commits que los commits en línea (-m)
+
+## Idioma
+
+Debemos unificar el idioma a usar en código y mensajes como _commits_, _issues_...
+
+Está bien intentar escribirlo todo en inglés para forzarnos y practicar, de echo si trabajásemos en un solo producto parecería el caso ideal, pero en ocasiones puede derivar en comentarios cortos, imprecisos o mal explicados. Para cumplir con el objetivo de comunicar la información de la mejor manera a los compañeros que están o llegan a un proyecto aplicaremos las siguientes reglas:
+
+* Código: todo en **inglés** (esto es más de unas guías de estilo).
+* En proyectos privados, es decir proyectos internos, todas las explicaciones en comentarios, _readme_, _commits_, _issues_, _pull requests_... en **español**.
+* En proyectos públicos, es decir proyectos para la comunidad, todas las explicaciones en comentarios, _readme_, _commits_, _issues_, _pull requests_... en **inglés**.
