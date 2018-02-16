@@ -2,6 +2,7 @@
 title: "Proyectos"
 slug: proyectos
 weight: 10
+pre: "<i class='fa fa-folder-open'></i> "
 ---
 
 ## Proyectos existentes

@@ -2,6 +2,7 @@
 title: "Buenas prácticas"
 slug: buenas-practicas
 weight: 30
+pre: "<i class='fa fa-thumbs-up'></i> "
 ---
 
 ## Evitar el acoplamiento en los _steps_
