@@ -2,6 +2,7 @@
 title: Configuración
 slug: configuracion
 weight: 10
+pre: "<i class='fa fa-wrench'></i> "
 ---
 
 Antes de ponernos a trabajar con ningún repositorio, debemos de configurar las opciones generales de Git para nuestro flujo de trabajo.

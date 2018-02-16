@@ -2,6 +2,7 @@
 title: "Glosario"
 slug: glosario
 weight: 20
+pre: "<i class='fa fa-book'></i> "
 ---
 
 ## Cobertura
