@@ -2,22 +2,27 @@
 title: Flujo de trabajo
 slug: flujo
 weight: 30
+pre: "<i class='fa fa-retweet'></i> "
 ---
 
 Por lo general los proyectos tendrán como mínimo dos ramas, **master** y **staging**. La rama _master_ es la que usan los servidores de producción para los despliegues, mientras que _staging_ es la de los servidores de prueba.
 
-Consideraciones generales:
+Habrá proyectos más sencillos, en los que el concepto de _staging_ no haga falta. En ese caso obviaremos las partes que afecten a staging pero seguiremos aplicando el resto del flujo de la misma forma.
 
-* Las ramas nuevas siempre saldrán de _master_, salvo casos especiales como una funcionalidad particular de una rama en desarrollo.
-* No hacer commits directos sobre master.
-* Salvo casos particulares, las ramas deberían de mergearse primero a _staging_ y tras asegurarnos de que todo funciona, a _master_.
-* Antes de mergear una rama, actualizar la rama sobre la que vamos a mergear.
+## Consideraciones generales
+
+* **Nunca** hacer commits directos sobre master.
+* Las ramas nuevas **siempre** saldrán de _master_, salvo casos especiales como una funcionalidad de largo recorrido con varias tareas.
+* Las ramas nuevas **jamás** saldrán de _staging_.
+* Las rama de _staging_ **jamás** se mergeará sobre otra rama.
+* Salvo casos particulares, las ramas deberían de mergearse primero a _staging_ y tras asegurarnos de que todo funciona, a _master_ o donde corresponda en el proyecto, como por ejemplo _integration_.
+* Antes de mergear una rama, actualizar la rama sobre la que vamos a mergear para resolver conflictos en nuestra rama.
 * Comprobar que una rama funciona correctamente antes de pushear.
 * No pushear cambios en _master_ que no se puedan desplegar.
 * Para actualizar las ramas podemos usar _git pull_ pero tambíen es recomendable hacer por separado _git fetch_ y _git rebase_. De esta forma veremos mas claramente que ha cambiado en el repositorio y haremos el rebase con más cuidado.
-* Usa [tags](http://git-scm.com/book/es/v2/Fundamentos-de-Git-Etiquetado) para marcar puntos importates del repositorio.
 * **Nunca reescribir la historia ya publicada.** Ciertos comandos como el rebase pueden reescribir la historia de los commits. Si esos commits ya estaban publicados, nunca debemos de vovler a publicarlos ya que afectaremos al resto de compañeros que los tengan en su repositorio local.
-* En algunos casos como usar un rebase interactivo (git rebase -i) para dejar la historia más limpia, hacerlo siempre con ramas personales que no estén publicadas.
+* Salvo casos muy particulares y completamente controlados, **jamás hacer git push -f**.
+
 ## Flujos de trabajo
 
 Dada la gran cantidad de proyectos distintos y clientes con distintas necesidades no podemos tener un flujo común para todos. El encargado de cada proyecto deberá determinar el flujo de trabajo más óptimo según el estado en el que se encuentra el proyecto, por ejemplo un proyecto en mantenimiento con poca carga de trabajo no requerirá el mismo flujo que un proyecto con constantes evolutivos y varias personas con dedicación total.
@@ -129,6 +134,7 @@ Añadiremos hooks de ayuda por defecto en nuestros proyectos:
 
 Los hooks no deben depender del proyecto, sólo al propio repositorio, por lo tanto hooks que pasen pruebas, formateos y demás que dependan del stack de cada uno, deberan de ser gestionados personalmente.
 
+### Ejemplos
 
 Ejemplo de flujo de trabajo con una nueva funcionalidad:
 
@@ -145,6 +151,7 @@ Ejemplo de flujo de trabajo con una nueva funcionalidad:
   $ git push
 
   # Cuando tengamos que desplegar
+  # Este paso se haría realmente con una pull request
   $ git checkout master
   $ git fetch
   $ git rebase
@@ -176,8 +183,9 @@ Manten el repositorio (local y remoto) limpo, ejecuta comandos de mantenimiento 
 * [`git-prune(1)`](http://git-scm.com/docs/git-prune)
 * [`git-fsck(1)`](http://git-scm.com/docs/git-fsck)
 
+## La policía de git
 
-### La policía de git no tendrá piedad con:
+La policía de git no tendrá piedad con:
 
   * Crear una rama desde _staging_.
   * Mergear _staging_ sobre otra rama.

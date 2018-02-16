@@ -29,8 +29,10 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
 
   ```bash
   # Ticket #36500
-  $ git checkout -b feature/oauth-migration-36500
+  $ git checkout -b feature/36500--oauth-migration
   ```
+
+  **NOTA**: Si no hay número de ticket, es un buen indicador de que debería de haber un ticket, créalo.
 
 * Agrupa las ramas en función del tipo de trabajo, para eso, nombra la rama empezando con el tipo y /, por ejemplo **feature/** para nuevas funcionalidades y **fix/** para correcciones:
 
@@ -38,6 +40,8 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
   $ git checkout -b feature/oauth-migration
   $ git checkout -b fix/text-error
   ```
+
+  **NOTA**: Mantener la consistencia del proyecto, revisar las agrupaciones que se están usando ya para no crear nuevas.
 
 * Para grandes funcionalidades en las que van a trabajar varias personas, crear una rama específica y crear subcarpetas para las distintas tareas:
 
@@ -75,13 +79,13 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
   $ git remote prune origin
   ```
 
-## Commits
+## _Commits_
 
-* Cada commit debe englobar el menor cambio "lógico" posible en vez de juntar múltiples cambios en un solo commit grande.
+* Cada _commit_ debe englobar el menor cambio "lógico" posible en vez de juntar múltiples cambios en un solo _commit_ grande.
 
-* Haz commits con lógica cada poco tiempo. Con commits pequeños y atómicos será más fácil entender la historia y revertir cambios si se producen problemas.
+* Haz _commits_ con lógica cada poco tiempo. Con _commits_ pequeños y atómicos será más fácil entender la historia y revertir cambios si se producen problemas.
 
-* Si has acumulado varios commits, al hacerlo procura mantener el orden lógico, es decir si un cambio en un commit depende de otro, el dependiente deberá de hacerse después. Y describe la dependencia en los comentarios.
+* Si has acumulado varios _commits_, al hacerlo procura mantener el orden lógico, es decir si un cambio en un _commit_ depende de otro, el dependiente deberá de hacerse después. Y describe la dependencia en los comentarios.
 
 ### Mensajes
 
@@ -103,7 +107,7 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
 
   Información sacada de http://git-scm.com/book/es/v1/Git-en-entornos-distribuidos-Contribuyendo-a-un-proyecto
   ```
-* Por esto, es más recomendable usar un editor para escribir los commits que los commits en línea (-m)
+* Por esto, es más recomendable usar un editor para escribir los _commits_ que los _commits_ en línea (-m)
 
 ## Idioma
 
