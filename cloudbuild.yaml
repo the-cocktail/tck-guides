@@ -1,0 +1,8 @@
+steps:
+- name: 'jojomi/hugo'
+  entrypoint: '/usr/local/sbin/hugo'
+  id: 'hugobuild'
+
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['-m', 'rsync', '-r', '-d', 'public/', 'gs://guides.the-cocktail.com/']
+  id: 'hugocp'
