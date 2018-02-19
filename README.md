@@ -28,7 +28,7 @@ hugo
 
 Al hacer un _push_ de _master_, automáticamente el estático es generado y actualizado en un bucket de google donde apunta el host de la web.
 
-Alternativamente hay un deploy para generar el estático y subirlo a la rama de gh-pages, pero actualmente no está en funcionando la [url de github pages](https://the-cocktail.github.io/tck-guides).
+Alternativamente hay un deploy para generar el estático y subirlo a la rama de gh-pages, pero actualmente no está funcionando la [url de github pages](https://the-cocktail.github.io/tck-guides).
 
 ```bash
 ./deploy.sh
