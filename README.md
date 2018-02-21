@@ -4,7 +4,7 @@ Ficheros fuente para generar un site estático con las guías de referencia de T
 
 ## ACCESO PÚBLICO
 
-El site está acecsible en [https://guides.the-cocktail.com/](https://guides.the-cocktail.com/)
+El site está accesible en [https://guides.the-cocktail.com/](https://guides.the-cocktail.com/)
 
 ## USO
 
@@ -26,7 +26,7 @@ hugo
 
 ## DESPLIEGE
 
-Al hacer un _push_ de _master_, automáticamente el estático es generado y actualizado en un bucket de google donde apunta el host de la web.
+Al hacer un _push_ de _master_, automáticamente el estático es generado y actualizado en un bucket de Google donde apunta el host de la web.
 
 Alternativamente hay un deploy para generar el estático y subirlo a la rama de gh-pages, pero actualmente no está funcionando la [url de github pages](https://the-cocktail.github.io/tck-guides).
 
