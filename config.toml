@@ -1,4 +1,4 @@
-baseURL = "http://guías.the-cocktail.com/"
+baseURL = "https://guides.the-cocktail.com/"
 languageCode = "es-ES"
 title = "Guías TCK"
 theme = "learn"
