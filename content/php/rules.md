@@ -2,7 +2,7 @@
 title: Rules
 slug: rules
 weight: 30
-pre: "<i class='fa fa-retweet'></i> "
+pre: "<i class='fa fa-list-alt'></i> "
 ---
 
 ## Documentación del código

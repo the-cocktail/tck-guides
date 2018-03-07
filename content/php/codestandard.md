@@ -2,7 +2,7 @@
 title: code standard
 slug: code-standard
 weight: 30
-pre: "<i class='fa fa-retweet'></i> "
+pre: "<i class='fa fa-list-alt'></i> "
 ---
 
 ## Proyectos que no usen Drupal

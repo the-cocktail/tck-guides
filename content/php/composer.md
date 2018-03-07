@@ -2,7 +2,7 @@
 title: composer
 slug: composer
 weight: 30
-pre: "<i class='fa fa-retweet'></i> "
+pre: "<i class='fa fa-list-alt'></i> "
 ---
 
 Composer se ha convertido en el gestor de dependencias más usado en los proyectos de PHP. A continuación una serie de normas y trucos:
