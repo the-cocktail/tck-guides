@@ -12,7 +12,7 @@ Todos los proyectos que no hagan uso de drupal DEBEN seguir el estándar psr2. h
 Sus normas, también descritas en el enlace anterior, son las siguientes
 
 * El código DEBE cumplir una guía de estilo
-* El código DEBE usar 4 espacios para identar. NUNCA se debe usar tabs
+* El código DEBE usar 4 espacios para indentar. NUNCA se debe usar tabs
 * NO DEBE de existir un límite de caracteres por línea de código. Sin embargo, no deberíamos escribir nunca líneas de más de 120 caracteres. En todo caso, la recomendación es que las líneas de código no superen los 80 caracteres. 
 * DEBE de haber una línea en blanco después de la declaración de namespace. También DEBE existir una línea en blanco después de cada bloque de sentencias use. 
 * Las llaves de apertura de una clase DEBEN ir en la línea siguiente a la declaración de la clase. Las llaves de cierre de una clase DEBEN ir en la línea posterior al cierre del body de la misma. 
