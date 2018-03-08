@@ -5,55 +5,53 @@ weight: 30
 pre: "<i class='fa fa-retweet'></i> "
 ---
 
-Por lo general los proyectos tendrán como mínimo dos ramas, **master** y **staging**. La rama _master_ es la que usan los servidores de producción para los despliegues, mientras que _staging_ es la de los servidores de prueba.
+Por lo general los proyectos tendrán como mínimo tres ramas de largo recorrido, **master**, **develop** y **staging**.
 
-Habrá proyectos más sencillos, en los que el concepto de _staging_ no haga falta. En ese caso obviaremos las partes que afecten a staging pero seguiremos aplicando el resto del flujo de la misma forma.
+* _master_: contiene el código que se desplegará en los servidores de producción.
+* _develop_: se integra el código de las distintas funcionalidades que se van desarrollando, previo paso a _master_.
+* _staging_: contiene el código que se desplegará en los servidores de prueba.
+
+Habrá proyectos más sencillos, en los que el concepto de _staging_ no haga falta. En ese caso obviaremos las partes que afecten a _staging_ pero seguiremos aplicando el resto del flujo de la misma forma.
 
 ## Consideraciones generales
 
-* **Nunca** hacer commits directos sobre master.
-* Las ramas nuevas **siempre** saldrán de _master_, salvo casos especiales como una funcionalidad de largo recorrido con varias tareas.
+* **Nunca** hacer commits directos sobre _master_.
+* Las ramas nuevas **siempre** saldrán de _develop_, salvo casos especiales como correcciones de urgencia (_hotfixes_).
 * Las ramas nuevas **jamás** saldrán de _staging_.
-* Las rama de _staging_ **jamás** se mergeará sobre otra rama.
-* Salvo casos particulares, las ramas deberían de mergearse primero a _staging_ y tras asegurarnos de que todo funciona, a _master_ o donde corresponda en el proyecto, como por ejemplo _integration_.
-* Antes de mergear una rama, actualizar la rama sobre la que vamos a mergear para resolver conflictos en nuestra rama.
+* La rama de _staging_ **jamás** se mergeará sobre otra rama.
+* Las ramas deberían de mergearse primero a _staging_ para probar su funcionamiento en el servidor de pruebas (en los proyectos que aplique).
+* Antes de mergear una rama B personal sobre una rama A común, actualizar la rama A (_git pull_) y si hay cambios nuevos cambios con respeto a la rama B, llevarlos a B para resolverlos en nuestra rama personal antes de llevarlos a la común.
 * Comprobar que una rama funciona correctamente antes de pushear.
-* No pushear cambios en _master_ que no se puedan desplegar.
-* Para actualizar las ramas podemos usar _git pull_ pero tambíen es recomendable hacer por separado _git fetch_ y _git rebase_. De esta forma veremos mas claramente que ha cambiado en el repositorio y haremos el rebase con más cuidado.
+* No pushear cambios en _master_ que no se puedan desplegar. La rama _master_ contiene el código que se despliega en los servidores y puede necesitarse hacer un despliegue de emergencia, o en aplicaciones con autoescalado, en cualquier momento podría crearse una nueva instancia con su código.
 * **Nunca reescribir la historia ya publicada.** Ciertos comandos como el rebase pueden reescribir la historia de los commits. Si esos commits ya estaban publicados, nunca debemos de vovler a publicarlos ya que afectaremos al resto de compañeros que los tengan en su repositorio local.
 * Salvo casos muy particulares y completamente controlados, **jamás hacer git push -f**.
 
-## Flujos de trabajo
+## Flujo de trabajo
 
-Dada la gran cantidad de proyectos distintos y clientes con distintas necesidades no podemos tener un flujo común para todos. El encargado de cada proyecto deberá determinar el flujo de trabajo más óptimo según el estado en el que se encuentra el proyecto, por ejemplo un proyecto en mantenimiento con poca carga de trabajo no requerirá el mismo flujo que un proyecto con constantes evolutivos y varias personas con dedicación total.
+En este apartado describiremos el flujo de trabajo de ramas a seguir en todos los proyectos:
 
-En este apartado describiremos distintos flujos para casos a mínimo y máximos:
+**NOTA**: Dada la gran cantidad de proyectos distintos, puede haber clientes que requieran necesidades particulares. Cuando el flujo de trabajo no encaje exactamente con el descrito en esta sección, se deberá tratar como una excepción y tendrá que ser consensuada y autorizada por él, la o los encargados técnicos del proyecto.
 
-### Básico
 
-En un flujo básico debemos crear una nueva rama (según las reglas) para cada nueva tarea que vayamos a realizar. Nuestro trabajo de forma particular deberá ir siempre en una rama independiente, nunca trabajaremos directamente sobre una rama con otro usuario.
+### Desarrollo
 
-Una vel la tarea este realizada procederemos según las reglas básicas, primero merge a staging para probar, finalmente _pull request_ a master y despliegue tras aceptación.
-
-![Flujo básico](/images/git/basic.png "Básico")
-
-### Máximos
-
-Con multiples desarrolladores, multiples funcionalidades y tareas de mantenimiento en paralelo y múltiples revisiones de usuario.
-
-Usar una rama de desarrollo o integración para unificar todo el código antes de llevarlo a master.
+Todos los proyectos tendrán una rama de larga duración _develop_, donde se integrarán todas las funcionalidades antes de llevarlas a _master_
 
 ![Desarrollo](/images/git/development.png "Desarrollo")
 
-Las nuevas funcionalidades se van llevando a staging para probar y con _pull request_ a desarrollo o integración.
+### Funcionalidades
 
-**TODO:** Corregir, la rama siempre debe de salir de master y añadir staging.
+Las nuevas funcionaliades saldrán siempre de la rama _develop_. Se podrán ir llevando a _staging_ para probar en los servidores de prueba (si aplica) y una vez listas, con _pull request_ a la rama _develop_.
 
 ![Funcionalidades](/images/git/features.png "Funcionalidades")
 
-Los fixes urgentes deben salir de master, volver a master (con _pull request_ y tageo tras despliegue) y actualizarse en desarrollo o integración.
+### Correcciones
+
+Las correcciones urgentes deben salir de _master_, probarse en _staging_ (si aplica), volver a _master_ (con _pull request_ y tageo tras despliegue) y actualizarse en _develop_.
 
 ![Fixes](/images/git/fixes.png "Fixes")
+
+### _Releases_
 
 En casos muy particules en los que un proyecto tenga despliegues de desarrollos muy planificados, puede llevarse una rama de release donde concentrar solo esos desarrollos. Por ejemplo, podría darse el caso de tener una máquina específica para desplegar ese desarrollo de forma aislada del resto para una validación específica del cliente.
 
