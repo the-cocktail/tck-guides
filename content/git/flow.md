@@ -5,10 +5,10 @@ weight: 30
 pre: "<i class='fa fa-retweet'></i> "
 ---
 
-Por lo general los proyectos tendrán como mínimo tres ramas de largo recorrido, **master**, **develop** y **staging**.
+Por lo general los proyectos tendrán como mínimo tres ramas de largo recorrido, **master**, **integration** y **staging**.
 
 * _master_: contiene el código que se desplegará en los servidores de producción.
-* _develop_: se integra el código de las distintas funcionalidades que se van desarrollando, previo paso a _master_.
+* _integration_: se integra el código de las distintas funcionalidades que se van desarrollando, previo paso a _master_.
 * _staging_: contiene el código que se desplegará en los servidores de prueba.
 
 Habrá proyectos más sencillos, en los que el concepto de _staging_ no haga falta. En ese caso obviaremos las partes que afecten a _staging_ pero seguiremos aplicando el resto del flujo de la misma forma.
@@ -16,7 +16,7 @@ Habrá proyectos más sencillos, en los que el concepto de _staging_ no haga fal
 ## Consideraciones generales
 
 * **Nunca** hacer commits directos sobre _master_.
-* Las ramas nuevas **siempre** saldrán de _develop_, salvo casos especiales como correcciones de urgencia (_hotfixes_).
+* Las ramas nuevas **siempre** saldrán de _integration_, salvo casos especiales como correcciones de urgencia (_hotfixes_).
 * Las ramas nuevas **jamás** saldrán de _staging_.
 * La rama de _staging_ **jamás** se mergeará sobre otra rama.
 * Las ramas deberían de mergearse primero a _staging_ para probar su funcionamiento en el servidor de pruebas (en los proyectos que aplique).
@@ -35,19 +35,19 @@ En este apartado describiremos el flujo de trabajo de ramas a seguir en todos lo
 
 ### Desarrollo
 
-Todos los proyectos tendrán una rama de larga duración _develop_, donde se integrarán todas las funcionalidades antes de llevarlas a _master_
+Todos los proyectos tendrán una rama de larga duración _integration_, donde se integrarán todas las funcionalidades antes de llevarlas a _master_
 
 ![Desarrollo](/images/git/development.png "Desarrollo")
 
 ### Funcionalidades
 
-Las nuevas funcionaliades saldrán siempre de la rama _develop_. Se podrán ir llevando a _staging_ para probar en los servidores de prueba (si aplica) y una vez listas, con _pull request_ a la rama _develop_.
+Las nuevas funcionaliades saldrán siempre de la rama _integration_. Se podrán ir llevando a _staging_ para probar en los servidores de prueba (si aplica) y una vez listas, con _pull request_ a la rama _integration_.
 
 ![Funcionalidades](/images/git/features.png "Funcionalidades")
 
 ### Correcciones
 
-Las correcciones urgentes deben salir de _master_, probarse en _staging_ (si aplica), volver a _master_ (con _pull request_ y tageo tras despliegue) y actualizarse en _develop_.
+Las correcciones urgentes deben salir de _master_, probarse en _staging_ (si aplica), volver a _master_ (con _pull request_ y tageo tras despliegue) y actualizarse en _integration_.
 
 ![Fixes](/images/git/fixes.png "Fixes")
 
