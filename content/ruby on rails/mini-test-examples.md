@@ -5,22 +5,12 @@ weight: 30
 pre: "<i class='fa fa-file-text-o'></i>"
 ---
 
-# Guía Minitest
+## 1.- Minitest
 
-* [1.- Minitest](#1--minitest)
-  * [1.1.- Utilidades](#11--utilidades)
-  * [1.2.- Test unitario](#12--test-unitario)
-  * [1.3.- Test funcional](#13--test-funcional)
-* [2.- Ejemplos](#2--ejemplos)
-  * [2.1.- Modelos](#21--modelos)
-  * [2.2.- Controladores](#22--controladores)
-
-# 1.- Minitest
-
-## 1.1.- Utilidades
+### 1.1.- Utilidades
 
 * Bloques: Permiten ejecutar un bloque antes o despues de correr los test:
-  - setup(): se ejecuta el bloque antes de tus specs.
+  - setup: se ejecuta el bloque antes de tus specs.
     ```ruby
       class UserTest < ActiveSupport::TestCase
         def setup
@@ -30,7 +20,7 @@ pre: "<i class='fa fa-file-text-o'></i>"
       end
     ```
 
-  - teardown(): se ejecuta el bloque después de tus specs.
+  - teardown: se ejecuta el bloque después de tus specs.
     ```ruby
       class UserTest < ActiveSupport::TestCase
         def teardown
@@ -47,7 +37,6 @@ pre: "<i class='fa fa-file-text-o'></i>"
       ApplicationController.stubs(:current_user).returns(build(:current_user))
     end
   ```
-
   ```ruby
     def setup
       stub_request(:any, "www.example.com").to_return(body: "foo", status: 200)
@@ -56,10 +45,9 @@ pre: "<i class='fa fa-file-text-o'></i>"
 
 Para esto se puede utilizar la gema [webmock](https://github.com/bblimke/webmock) o [VCR](https://github.com/vcr/vcr)
 
-## 1.2.- Test unitario
+### 1.2.- Test unitario
 
 Un test unitario comprueba una funcionalidad concreta, por ejemplo, de un metodo de una clase en concreto.
-
 ```ruby
 class UserTest < ActiveSupport::TestCase
   def setup
@@ -71,10 +59,9 @@ class UserTest < ActiveSupport::TestCase
 end
 ```
 
-## 1.3.- Test funcional
+### 1.3.- Test funcional
 
 Un test funcional es algo más complejo y se ve implicada con la interacción de otras clases o modulos.
-
 ```ruby
 class UserTest < ActiveSupport::TestCase
   test "#total_price" do
@@ -85,12 +72,11 @@ class UserTest < ActiveSupport::TestCase
 end
 ```
 
-# 2.- Ejemplos
+## 2.- Ejemplos
 
-## 2.1.- Modelos
+### 2.1.- Modelos
 
 Una buena practica y recomendada a la hora de testear modelos sería testear relaciones, validaciones y los metodos del modelo correspondiente.
-
 ```ruby
 class UserTest < ActiveSupport::TestCase
   test 'valid user' do
@@ -112,8 +98,7 @@ class UserTest < ActiveSupport::TestCase
 end
 ```
 
-## 2.2.- Controladores
-
+### 2.2.- Controladores
 ```ruby
 class ReporterControllerTest < ActionController::TestCase
   def test_show
