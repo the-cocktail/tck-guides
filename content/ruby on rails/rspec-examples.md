@@ -5,19 +5,9 @@ weight: 30
 pre: "<i class='fa fa-file-text-o'></i>"
 ---
 
-# Guía Rspec
+## 1.- Rspec
 
-* [1.- Rspec](#1--rspec)
-  * [1.1.- Utilidades](#11--utilidades)
-  * [1.2.- Test unitario](#12--test-unitario)
-  * [1.3.- Test funcional](#13--test-funcional)
-* [2.- Ejemplos](#2--ejemplos)
-  * [2.1.- Modelos](#21--modelos)
-  * [2.2.- Controladores](#22--controladores)
-
-# 1.- Rspec
-
-## 1.1.- Utilidades
+### 1.1.- Utilidades
 
 * Bloques before: Aunque existe diferentes tipos de bloques los destacables son:
   - before(:each): se ejecuta el bloque una vez por cada uno de tus specs.
@@ -57,7 +47,7 @@ pre: "<i class='fa fa-file-text-o'></i>"
 
 Para esto se puede utilizar la gema [webmock](https://github.com/bblimke/webmock) o [VCR](https://github.com/vcr/vcr)
 
-## 1.2.- Test unitario
+### 1.2.- Test unitario
 
 Un test unitario comprueba una funcionalidad concreta, por ejemplo, de un método de una clase en concreto.
 
@@ -71,7 +61,7 @@ RSpec.describe User, type: :model do
 end
 ```
 
-## 1.3.- Test funcional
+### 1.3.- Test funcional
 
 Un test funcional es algo más complejo y se ve implicada con la interacción de otras clases o modulos.
 
@@ -87,9 +77,9 @@ RSpec.describe ShoppingCart, type: :model do
 end
 ```
 
-# 2.- Ejemplos
+## 2.- Ejemplos
 
-## 2.1.- Modelos
+### 2.1.- Modelos
 
 Una buena practica y recomendada a la hora de testear modelos sería testear relaciones, validaciones y los métodos del modelo correspondiente.
 
@@ -116,7 +106,7 @@ RSpec.describe User, type: :model do
 end
 ```
 
-## 2.2.- Controladores
+### 2.2.- Controladores
 
 ```ruby
 RSpec.describe UserController, type: :controller do
