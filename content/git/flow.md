@@ -11,7 +11,7 @@ Por lo general los proyectos tendrán como mínimo tres ramas de largo recorrido
 * _integration_: se integra el código de las distintas funcionalidades que se van desarrollando, previo paso a _master_.
 * _staging_: contiene el código que se desplegará en los servidores de prueba.
 
-Habrá proyectos más sencillos, en los que el concepto de _staging_ no haga falta. En ese caso obviaremos las partes que afecten a _staging_ pero seguiremos aplicando el resto del flujo de la misma forma.
+Existe la posibilidad que por motivos de proyecto no exista un entorno de _staging_, en algún punto del proyecto. En este caso, no existirá esta rama en nuestro flujo de Git y obviaremos las siguientes referencias a dicha rama. En el momento en el que un proyecto tenga entorno de _staging_, se deberá crear e introducir en el flujo una rama _staging_.
 
 ## Consideraciones generales
 
