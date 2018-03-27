@@ -74,7 +74,7 @@ Consideraciones generales:
 
 Pasos para la revisión:
 
-1. Leer con clama la descripción.
+1. Leer con calma la descripción.
 2. Probar los cambios en local y ver que funciona como se explica.
 3. Revisar el código de los commits.
 4. Si aplica, intentar dar feedback constructivo educadamente.
