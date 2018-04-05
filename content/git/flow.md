@@ -15,8 +15,8 @@ Existe la posibilidad que por motivos de proyecto no exista un entorno de _stagi
 
 ## Consideraciones generales
 
-* **Nunca** hacer commits directos sobre _master_.
-* Las ramas nuevas **siempre** saldrán de _integration_, salvo casos especiales como correcciones de urgencia (_hotfixes_).
+* **Nunca** hacer commits directos sobre _master_, salvo casos especiales de **intervención sobre producción** (_hotfixes, infraestructura_).
+* Las ramas nuevas **siempre** saldrán de _master_
 * Las ramas nuevas **jamás** saldrán de _staging_.
 * La rama de _staging_ **jamás** se mergeará sobre otra rama.
 * Las ramas deberían de mergearse primero a _staging_ para probar su funcionamiento en el servidor de pruebas (en los proyectos que aplique).
@@ -32,22 +32,15 @@ En este apartado describiremos el flujo de trabajo de ramas a seguir en todos lo
 
 **NOTA**: Dada la gran cantidad de proyectos distintos, puede haber clientes que requieran necesidades particulares. Cuando el flujo de trabajo no encaje exactamente con el descrito en esta sección, se deberá tratar como una excepción y tendrá que ser consensuada y autorizada por él, la o los encargados técnicos del proyecto.
 
-
-### Desarrollo
-
-Todos los proyectos tendrán una rama de larga duración _integration_, donde se integrarán todas las funcionalidades antes de llevarlas a _master_
-
-![Desarrollo](/images/git/development.png "Desarrollo")
-
 ### Funcionalidades
 
-Las nuevas funcionaliades saldrán siempre de la rama _integration_. Se podrán ir llevando a _staging_ para probar en los servidores de prueba (si aplica) y una vez listas, con _pull request_ a la rama _integration_.
+Las nuevas funcionaliades saldrán siempre de la rama _master_. Se podrán ir llevando a _staging_ para probar en los servidores de prueba (si aplica) y una vez listas, con _pull request_ a la rama _integration_.
 
 ![Funcionalidades](/images/git/features.png "Funcionalidades")
 
-### Correcciones
+### Intervenciones sobre producción
 
-Las correcciones urgentes deben salir de _master_, probarse en _staging_ (si aplica), volver a _master_ (con _pull request_ y tageo tras despliegue) y actualizarse en _integration_.
+Las correcciones urgentes o cambios que apliquen directamente al entorno de producción (infraestructura) pueden ver su flujo alterado. Probarse en _staging_ (si aplica), volver a _master_ (con _pull request_ y tageo tras despliegue) y actualizarse en _integration_. Es importante que este tipo de intervenciones se actualicen en el resto de ramas comunes.
 
 ![Fixes](/images/git/fixes.png "Fixes")
 
@@ -105,6 +98,17 @@ Ejemplos de como probar los cambios: pasos para replicar un problema, snippets d
 Escribir aquí qué comandos y consideraciones que son necesarios para su despliegue (por ejemplo, borrar caché).
 Si no hace falta ejecutar nada, se puede borrar esta parte.
 ```
+
+#### Vida de una _Pull Request_
+
+Las _pull request_ no son un recordatorio o un log de funcionalidades en desarrollo. Cuando se crea una _pull request_ se debe tener la convicción de que el código cumple con la funcionalidad definida y se generá una discusión para su aprobación.
+
+* No deben de quedar desarrollos pendientes.
+* Se puede trabajar sobre una _pull request_ abierta para mejoras o correcciones.
+* Si fuera necesario hacer cambios o seguir desarrollando, se deberá cancelar la _pull request_, realizar los cambios correspondientes y después volverla a crear.
+* La aprobación de la _pull request_ no significa que se deba mergear automáticamente.
+
+Una vez se tenga la aprobación, el tiempo que debe transcurrir entre su merge con _integration_ y su merge con _master_ y futuro despliegue debe ser el menor tiempo posible, con el fin de evitar colisiones y que estás funcionalidades queden fuera de contexto.
 
 ### _Tags_
 
