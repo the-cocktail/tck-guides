@@ -108,7 +108,7 @@ Las _pull request_ no son un recordatorio o un log de funcionalidades en desarro
 * Si fuera necesario hacer cambios o seguir desarrollando, se deberá cancelar la _pull request_, realizar los cambios correspondientes y después volverla a crear.
 * La aprobación de la _pull request_ no significa que se deba mergear automáticamente.
 
-La vida útil de una _pull request_ no debe más de una semanas, dependiendo del proyecto y sus periodos de aprobación/despliegue. Una _pull request_ que se dilata en el tiempo demasiado pierde su sentido, al no estar su código actualizado y poder generar conflictos. En caso de no poder hacer el merge por cualquier razón, se deberá de cerrar y cuando vuelva a ser posible hacerlo, actualizar la rama y abrir una nueva _pull request_.
+La vida útil de una _pull request_ no debe más de una semana, dependiendo del proyecto y sus periodos de aprobación/despliegue. Una _pull request_ que se dilata en el tiempo demasiado pierde su sentido, al no estar su código actualizado y poder generar conflictos. En caso de no poder hacer el merge por cualquier razón, se deberá de cerrar y cuando vuelva a ser posible hacerlo, actualizar la rama y abrir una nueva _pull request_.
 
 Una vez se tenga la aprobación, el tiempo que debe transcurrir entre su merge con _integration_ y su merge con _master_ y futuro despliegue debe ser el menor tiempo posible, con el fin de evitar colisiones y que estás funcionalidades queden fuera de contexto.
 
