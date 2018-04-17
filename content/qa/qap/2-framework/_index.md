@@ -3,9 +3,6 @@ title: 2.- Marco de trabajo
 slug: qap-framework
 ---
 
-## Área de Calidad y Procesos
-### Proceso de control de Calidad
-
 El **_marco de trabajo_** propuesto en dicho documento aúna en la definición, optimización y unificación de un único _Proceso de Calidad_.
 
 Dentro de la potenciación buscada, a nivel tecnológico por _TCK_, es plausible la necesidad de realizar ciertas unificaciones en procesos y herramientas que permitan explotar, a nivel global, todos los datos y acciones de los diferentes proyectos de la compañía. De esta manera, se agrupa y configura un único marco de trabajo, formado por diferentes módulos reutilizables en base al tipo de proyecto y con la flexibilidad demandada en _TCK_.
