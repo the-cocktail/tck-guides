@@ -12,7 +12,7 @@ chapter: true
 
 En base al marco que se ha descrito anteriormente, se han especificado una serie de elementos que engloban el trabajo a realizar en las diferentes áreas y permite entregar con garantía a los clientes.
 
-La jerarquía de los elementos ha de cumplirse estrictamente, ya que todo el trabajo que se va a realizar en cada _spring_ se basa en ello. La idea principal de esta jerarquía es que los elementos superiores agrupan a los inferiores, capturando el valor propio de negocio, cuanto más arriba esté el elemento.
+La jerarquía de los elementos ha de cumplirse estrictamente, ya que todo el trabajo que se va a realizar en cada _strint_ se basa en ello. La idea principal de esta jerarquía es que los elementos superiores agrupan a los inferiores, capturando el valor propio de negocio, cuanto más arriba esté el elemento.
 
 El valor máximo de negocio es la _épica_, completado por las historias de usuario. A continuación, aparecen las tareas y los defectos, que no tienen valor de negocio y que, simplemente describen el trabajo a realizar de manera interna. En el caso de defecto, solucionan algún tipo de problema encontrado a lo largo de un _sprint_ o versión.
 
@@ -49,13 +49,13 @@ La historia de usuario tiene que contener de manera obligatoria y lo más espec�
 
 # Tarea
 
-Las tareas son unidades que se realizan a lo largo de los _springs_. Cubren el trabajo a realizar en las diferentes áreas y habitualmente sirven para marcar las pautas a realizar de cara a las diferentes historias de usuario. Cada tarea contiene un esfuerzo que se debe de cumplimentar obligatoriamente, además, solo pueden depender de una persona.
+Las tareas son unidades que se realizan a lo largo de los _strints_. Cubren el trabajo a realizar en las diferentes áreas y habitualmente sirven para marcar las pautas a realizar de cara a las diferentes historias de usuario. Cada tarea contiene un esfuerzo que se debe de cumplimentar obligatoriamente, además, solo pueden depender de una persona.
 
 # Defecto
 
-Los errores son los elementos que contienen los problemas encontrados a lo largo de los diferentes _spring_ o entregables del proyecto. No tienen que ser siempre problemas de mal funcionamiento, también pueden ser carencias, peticiones o revisiones dentro de estos entregables.
+Los errores son los elementos que contienen los problemas encontrados a lo largo de los diferentes _strint_ o entregables del proyecto. No tienen que ser siempre problemas de mal funcionamiento, también pueden ser carencias, peticiones o revisiones dentro de estos entregables.
 
-Es muy importante la correcta priorización de los errores, para que se introduzcan en el _spring_ desde los más críticos hacia los menos.
+Es muy importante la correcta priorización de los errores, para que se introduzcan en el _strint_ desde los más críticos hacia los menos.
 
 # Caso de prueba
 
