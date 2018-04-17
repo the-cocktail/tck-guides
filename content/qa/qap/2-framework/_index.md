@@ -1,18 +1,14 @@
 ---
 title: 2.- Marco de trabajo
 slug: qap-framework
-chapter: true
 ---
 
-#### Área de Calidad y Procesos
-
+## Área de Calidad y Procesos
 ### Proceso de control de Calidad
 
-## Marco de trabajo
+El **_marco de trabajo_** propuesto en dicho documento aúna en la definición, optimización y unificación de un único _Proceso de Calidad_.
 
-El marco de trabajo propuesto en dicho documento aúna en la definición, optimización y unificación de un único _Proceso de Calidad_.
-
-Dentro de la potenciación buscada, a nivel tecnológico por TCK, es plausible la necesidad de realizar ciertas unificaciones en procesos y herramientas que permitan explotar, a nivel global, todos los datos y acciones de los diferentes proyectos de la compañía. De esta manera, se agrupa y configura un único marco de trabajo, formado por diferentes módulos reutilizables en base al tipo de proyecto y con la flexibilidad demandada en TCK.
+Dentro de la potenciación buscada, a nivel tecnológico por _TCK_, es plausible la necesidad de realizar ciertas unificaciones en procesos y herramientas que permitan explotar, a nivel global, todos los datos y acciones de los diferentes proyectos de la compañía. De esta manera, se agrupa y configura un único marco de trabajo, formado por diferentes módulos reutilizables en base al tipo de proyecto y con la flexibilidad demandada en _TCK_.
 
 Esta unificación, conlleva la realización de esta documentación, que aporta una serie de procesos y formas de trabajo para ayudar a esta transformación dentro de la compañía.
 
@@ -20,7 +16,7 @@ Esta unificación, conlleva la realización de esta documentación, que aporta u
 
 La implantación es progresiva, cumpliendo una serie de etapas según la necesidad de cada proyecto, ampliándose, poco a poco, hasta que se cubran todos, en todas las situaciones disponibles.
 
-Una vez que se finalice esta implantación, quedarán definidas las pautas y el marco de trabajo unificado, pudiendo realizar una explotación global de proyectos en TCK.
+Una vez que se finalice esta implantación, quedarán definidas las pautas y el marco de trabajo unificado, pudiendo realizar una explotación global de proyectos en _TCK_.
 
 La metodología que se ha seleccionado para esta implantación es _Agile_. Con la particularidad de implementar y ejecutar una estrategia de gestión personalizada, si se diera el caso, en cada proyecto. El objetivo principal, es llevar a cabo una serie de mejoras evolutivas a través de prácticas eficientes, enmarcándose en fases, que se explican a lo largo del documento. De manera resumida, son las siguientes:
 

@@ -1,14 +1,11 @@
 ---
 title: 3.- Elementos de trabajo
 slug: qap-work-elements
-chapter: true
 ---
 
-#### Área de Calidad y Procesos
+## Área de Calidad y Procesos
 
 ### Proceso de control de Calidad
-
-## Elementos de trabajo
 
 En base al marco que se ha descrito anteriormente, se han especificado una serie de elementos que engloban el trabajo a realizar en las diferentes áreas y permite entregar con garantía a los clientes.
 
@@ -16,10 +13,10 @@ La jerarquía de los elementos ha de cumplirse estrictamente, ya que todo el tra
 
 El valor máximo de negocio es la _épica_, completado por las historias de usuario. A continuación, aparecen las tareas y los defectos, que no tienen valor de negocio y que, simplemente describen el trabajo a realizar de manera interna. En el caso de defecto, solucionan algún tipo de problema encontrado a lo largo de un _sprint_ o versión.
 
-En los siguientes puntos, podemos observar, con más detalle cada elemento de trabajo utilizado en el proceso de calidad de TCK.
+En los siguientes puntos, podemos observar, con más detalle cada elemento de trabajo utilizado en el proceso de calidad de _TCK_.
 
 
-# Épica
+#### Épica
 
 Son los elementos superiores que agrupan al resto y se pueden realizar a lo largo de varios _sprints_. En los siguientes puntos, se detallan en profundidad las acciones que se realizan dentro de ellas.
 
@@ -33,7 +30,7 @@ Las épicas tienen un valor global, por sí mismas, de cara a cliente y cumplen 
 Las épicas forman parte de la planificación que se ha cerrado con el cliente y, por lo tanto, son los hitos más importantes que hay que cumplir para que el proyecto se desarrolle en fecha y con garantía. Estas _épicas_, a su vez, están disgregadas en diferentes controles que aplican a cada área y que se encargan de medir el trabajo realizado y entregado por las mismas y si ha sido correcto o no, posibilitando la mejora continua dentro de cada _sprint_.
 
 
-# Historia de usuario
+#### Historia de usuario
 
 Una historia de usuario es un elemento con valor de negocio por sí mismo. Junto con las tareas, engloba y forma cada _épica_ y son atómicas, es decir, se pueden poner en producción por sí solas y aportan el valor suficiente a cliente para su utilización.
 
@@ -47,17 +44,17 @@ Una historia de usuario tiene que cumplir los siguientes criterios:
 
 La historia de usuario tiene que contener de manera obligatoria y lo más específicamente posible una buena definición, unos criterios de aceptación y toda la información adjunta que sea posible.
 
-# Tarea
+#### Tarea
 
 Las tareas son unidades que se realizan a lo largo de los _sprints_. Cubren el trabajo a realizar en las diferentes áreas y habitualmente sirven para marcar las pautas a realizar de cara a las diferentes historias de usuario. Cada tarea contiene un esfuerzo que se debe de cumplimentar obligatoriamente, además, solo pueden depender de una persona.
 
-# Defecto
+#### Defecto
 
 Los errores son los elementos que contienen los problemas encontrados a lo largo de los diferentes _sprint_ o entregables del proyecto. No tienen que ser siempre problemas de mal funcionamiento, también pueden ser carencias, peticiones o revisiones dentro de estos entregables.
 
 Es muy importante la correcta priorización de los errores, para que se introduzcan en el _sprint_ desde los más críticos hacia los menos.
 
-# Caso de prueba
+#### Caso de prueba
 
 Los casos de prueba son elementos de trabajo que comprueban los pasos a seguir para garantizar el correcto funcionamiento de los mismos a nivel funcional y no funcional. Pueden ser automáticos o manuales.
 
