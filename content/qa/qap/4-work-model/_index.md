@@ -1,25 +1,22 @@
 ---
 title: 4.- Modelo de trabajo
 slug: qap-work-model
-chapter: true
 ---
 
-#### Área de Calidad y Procesos
+## Área de Calidad y Procesos
 
 ### Proceso de control de Calidad
 
-## Modelo de trabajo
-
-En base al proceso y los elementos descritos en los puntos anteriores, se diseña un modelo de trabajo acorde a las necesidades de TCK y sus proyectos.
+En base al proceso y los elementos descritos en los puntos anteriores, se diseña un modelo de trabajo acorde a las necesidades de _TCK_ y sus proyectos.
 
 El proceso de Calidad y, por lo tanto, el modelo que se va a describir, va a organizarse en diferentes fases, que se van a tratar con detalle en los siguientes puntos. Estas descripciones, ordenan la manera de trabajar a lo largo de los _sprints_, dentro de un proyecto.
 
-En los siguientes puntos se define el marco de trabajo, se trata, punto por punto, las diferentes fases del ciclo de vida del desarrollo de los proyectos de TCK. Además, en los siguientes puntos
+En los siguientes puntos se define el marco de trabajo, se trata, punto por punto, las diferentes fases del ciclo de vida del desarrollo de los proyectos de _TCK_. Además, en los siguientes puntos
 
 Dentro de cada fase, se describe una serie de pautas y puntos a seguir, en forma de reunión, para que la interlocución entre las diferentes personas que integran los proyectos se realice de la forma adecuada y se pueda cerrar la fase con total garantía.
 
 
-# Fase de inmersión
+#### Fase de inmersión
 
 Es la fase inicial. En ella se va a diseñar el _mapa de proyecto_ que se va a seguir a lo largo de los _sprints_ a realizar y los requisitos que se van a utilizar en el resto de fases.
 
@@ -38,7 +35,7 @@ Este _mapa de proyecto_ se basa en los siguientes puntos, que se deben de obtene
 * _**Planificación**_: Dentro de la planificación, existen los siguientes puntos que se deben de seguir:
       * **Pautas metodológicas**: se capturan las pautas dentro de la metodología que más se adecuan al proyecto, puede ser no necesario el utilizar todas las disponibles.
       * **Herramientas**: se elabora un sistema de las herramientas que se van a utilizar, en qué lenguaje vamos a desarrollar o que le vamos a aportar al cliente y en qué formato. También se contempla la automatización.
-      * **Necesidades**: se acuerda entre TCK y cliente, qué necesidades son las primordiales para llevar a cabo de manera adecuada el proyecto.
+      * **Necesidades**: se acuerda entre _TCK_ y cliente, qué necesidades son las primordiales para llevar a cabo de manera adecuada el proyecto.
 
 * _**Priorización**_: De cara a la priorización, es importante seguir los siguientes puntos:
       * **Cierre de Fechas**: se cierran las fechas previstas para el inicio y finalización del proyecto, además de los hitos que se quieran cubrir.
@@ -48,7 +45,7 @@ Este _mapa de proyecto_ se basa en los siguientes puntos, que se deben de obtene
 Una vez que obtenemos toda la información de los puntos anteriores y se han realizado las reuniones correspondientes, se definen y describen, por todas las áreas, los requisitos del proyecto, que cerrarán y darán forma al _mapa de proyecto_ definitivo y serán la base para el trabajo en las siguientes fases.
 
 
-# Construcción del _Sprint Cero_
+#### Construcción del _Sprint Cero_
 
 La primera reunión interna que hay que realizar, es la reunión de inicio (que será igual que la reunión de inicio de _sprint_, pero con una entidad mayor). En ella, vamos a realizar la apertura del _sprint 0_ del proyecto, además de organizar todas las tareas e intentar adecuar, entre todos, el posible _backlog_ que se irá realizando en posteriores _sprints_.
 
@@ -61,7 +58,7 @@ Para esta reunión, es necesario, como se ha explicado en los puntos anteriores,
 En esta reunión es totalmente obligatorio que esté **presente todo el equipo de trabajo**.
 
 
-# Construcción de los requisitos
+#### Construcción de los requisitos
 
 Para realizar la construcción de requisitos del proyecto, se debe de realizar una especificación de requisitos adecuada y que cubra una serie de características:
 
@@ -75,7 +72,7 @@ Para realizar la construcción de requisitos del proyecto, se debe de realizar u
 * **Verificable.** Deben de poder probarse y verificarse a lo largo de todo el proceso.
 
 
-# Tipos de requisitos
+#### Tipos de requisitos
 
 De manera general, existen una serie de tipos de requisitos que deben de seguirse en todo proyecto y nos sirven para poder obtener toda la información para iniciar el proyecto de manera adecuada:
 
@@ -85,7 +82,7 @@ De manera general, existen una serie de tipos de requisitos que deben de seguirs
 * **Sistema:** Son versiones extendidas de los requisitos de usuario y que se utilizan por desarrollo como punto de partida para el diseño del sistema. Tienen el detalle adecuado a nivel técnico.
 
 
-# Priorización de los requisitos
+#### Priorización de los requisitos
 
 En base a diferentes aspectos, los requisitos se pueden categorizar en tres opciones:
 
@@ -94,7 +91,7 @@ En base a diferentes aspectos, los requisitos se pueden categorizar en tres opci
 3. **Opcionales:** Son requisitos que se pueden realizar o no y aportan un valor extra. Siempre son valorables si el tiempo para su realización es el adecuado y tenemos margen para introducirlos entre el resto de requisitos obligatorios.
 
 
-# Construcción del _mapa de proyecto_
+#### Construcción del _mapa de proyecto_
 
 El _mapa de proyecto_, se enfoca en la planificación que se va a realizar en las fases posteriores, marcando diferentes hitos que tienen unas fechas de entrega ya cerradas. Habitualmente, será un cronograma donde estén marcados estos hitos y podamos valorar qué tiempo nos va a llevar un proyecto en sí, y cómo vamos a darle forma a lo largo del tiempo del mismo.
 
@@ -111,7 +108,7 @@ Un _mapa de proyecto_ debe de contener:
 Toda la información debe de estar incluida en la unidad de equipo abierta previamente para organizar toda la documentación del proyecto.
 
 
-# Fase de definición
+#### Fase de definición
 
 Una vez hemos cerrado la entrega del _mapa de proyecto_ con su información al completo y los requisitos realizados, pasamos a la fase de definición**, donde comenzamos a invertir el esfuerzo en la definición de las historias de usuario y como entregable, la realización del **documento funcional con toda la información completa y detallada** de lo que va a ser el proyecto.
 
@@ -133,7 +130,7 @@ En esta fase de definición y entrando más en detalle, se deben de realizar los
 * **Documento funcional**: Se completa el documento funcional con toda la información de los puntos anteriores y la referencia al documento de historias de usuario. El documento funcional integra toda la información referente a los requisitos con total detalle y que historias de usuario los cubren.
 
 
-# Construcción de historias de usuario
+#### Construcción de historias de usuario
 
 Por definición, la historia de usuario es una representación de un requisito utilizando una frase corta en lenguaje coloquial y entendible, que no sea técnico.
 
@@ -149,7 +146,7 @@ Las historias de usuario deben de cubrir una serie de características para que 
 La historia de usuario queda terminada cuando esté dispuesta toda la información referente a la misma.
 
 
-# Construcción del apartado técnico
+#### Construcción del apartado técnico
 
 Dentro del documento funcional, debe de existir un apartado técnico que cubra las especificaciones definidas. Este apartado técnico debe de contener lo siguiente:
 
@@ -159,7 +156,7 @@ Dentro del documento funcional, debe de existir un apartado técnico que cubra l
 * Información técnica y funcional en base al proyecto.
 
 
-# Construcción de los criterios de aceptación
+#### Construcción de los criterios de aceptación
 
 Cada historia de usuario debe de contener unos criterios de aceptación, que al fin y al cabo son las acciones que deben de cubrir el comportamiento correcto de la misma. Deben de cubrir las siguientes preguntas:
 
@@ -181,7 +178,7 @@ Por ejemplo:
 3. Dado que el usuario está en el cuadro de búsqueda cuando el usuario teclea algo entonces se le muestra una lista con sugerencias de búsqueda relacionadas con lo que ha tecleado.
 
 
-# Apertura y revisión del Backlog
+#### Apertura y revisión del Backlog
 La generación del backlog se realiza tras la aprobación del _mapa de proyecto_ y la definición de las historias de usuario. Cada área tendrá diferentes tareas a realizar sobre esas historias de usuario y por lo tanto deben de transcribirse en el mismo.
 
 
@@ -191,12 +188,12 @@ Una vez que se realiza la priorización de los elementos de trabajo, estos, se s
 En esta fase también se continúa con la elaboración y ampliación del esqueleto de casos de prueba que posteriormente vamos a cerrar.
 
 
-# Priorización de los elementos de trabajo
+#### Priorización de los elementos de trabajo
 Dentro del marco de trabajo, el backlog marca hitos en base al _sprint_ en el que estemos trabajando. La priorización de los elementos es de suma importancia para comprobar cuales tienen que realizarse en primer lugar o cual puede ser posterior (esto es muy útil de cara al trabajo con defectos).
 
 La priorización debe de realizarse en una reunión de priorización y planificación donde, entre todas las áreas, se deben de considerar los elementos que van a ser entregados en ese ciclo de tiempo.
 
-La priorización que se lleva a cabo en la herramienta de trabajo que se utiliza en TCK es la siguiente:
+La priorización que se lleva a cabo en la herramienta de trabajo que se utiliza en _TCK_ es la siguiente:
 1. Highest: son los elementos críticos para el proyecto, son totalmente fundamentales para que el hito de negocio se cumpla, por lo tanto, en el caso de que no se cumpla, se considera que este ha fracasado.
 2. High: Son los elementos importantes, pero no imprescindibles, por lo tanto, deben de entregarse, pero pueden tener un cierto retraso o pueden pasarse a otro _sprint_ si no llegamos en plazo. El hito no fracasa si este elemento no es entregado en el plazo determinado.
 3. Medium: Son elementos que deben de realizarse en un periodo corto, no son importantes, pero marcan una continuidad de la calidad y del desarrollo dentro del _sprint_. Cubren expectativas de cliente.
@@ -204,7 +201,7 @@ La priorización que se lleva a cabo en la herramienta de trabajo que se utiliza
 5. Lowest: habitualmente son mejoras, no están planificadas y surgen a lo largo del _sprint_. Se pueden reconsiderar o incluso eliminar por no aplicar.
 
 
-# Construcción del documento funcional
+#### Construcción del documento funcional
 
 El documento funcional debe de ser el primer paso a la hora de comenzar el desarrollo del proyecto y debe de marcar una hoja de ruta a seguir.  Para que un documento funcional sea lo más correcto posible hay una serie de puntos importantes que se deben de tener en cuenta:
 
@@ -215,7 +212,7 @@ El documento funcional debe de ser el primer paso a la hora de comenzar el desar
 * Es la hoja de ruta para que todas las personas involucradas en el proyecto tengan toda la información del mismo y puedan trabajar en la misma línea.
 
 
-# Fase de implementación
+#### Fase de implementación
 
 La fase de implementación es la fase de desarrollo (no solo técnico, si no también funcional o aplicado a cada área) propiamente dicha. Este desarrollo se basa en la documentación funcional y en las historias de usuario. Además, de toda la información que va proporcionando el resto de áreas para que el desarrollo sea completo.
 
@@ -232,14 +229,14 @@ En esta fase, se deben de completar los siguientes puntos, para poder tener la g
 * **Prototipado:** Se cubrirá la sección de prototipado de las historias de usuario que se van a realizar, cubriendo la necesidad de cada historia de usuario.
 * **Diseño:** Basándose en toda la información integrada en las historias de usuario, se realiza el diseño de las mismas.
 * **Documentación técnica:** una vez que se vayan completando los puntos anteriores también deberá tener en cuenta si es necesario completar más información por su parte, para que el desarrollo de las mismas sea lo más completo y cerrado. También realizará una documentación técnica en la herramienta que especifique, para registrar todo de cara a posibles cambios o sustituciones en el equipo de personas.
-* **Testing desarrollo:** Antes de dar por finalizada la historia de usuario y pasar al área de calidad para su validación es necesario realizar una serie de pruebas en desarrollo que están dentro del marco de trabajo especificado en la estrategia de testing para TCK.
+* **Testing desarrollo:** Antes de dar por finalizada la historia de usuario y pasar al área de calidad para su validación es necesario realizar una serie de pruebas en desarrollo que están dentro del marco de trabajo especificado en la estrategia de testing para _TCK_.
 * **Plan de pruebas:** El área de calidad y procesos, define y completa el plan de pruebas de las historias de usuario basándose en toda la información que han ido aportando el resto de áreas.
 * **Demo:** La entrega de esta fase desemboca en una demo interna que se realiza con las personas que se consideren y cuyo responsable de desarrollo se encargará de mostrar para que se dé el visto bueno para desplegar al entorno de PRE donde se comenzará con su validación.
 
 Una vez que se completan todos los puntos anteriores, se puede dar el paso a la siguiente fase. En la entrega de esta fase, la demo, es cuando se da el visto bueno final a todo lo realizado.
 
 
-# Construcción del plan de pruebas
+#### Construcción del plan de pruebas
 
 El plan de pruebas que se especifica en esta fase, está cumplimentado con una serie de casos de prueba, que a su vez, agrupa una serie de pasos de prueba.
 
@@ -257,7 +254,7 @@ De cara a realizar una serie de buenas prácticas para crear un buen plan de pru
 * **Efectivos:** los casos de prueba que se acercan más a las acciones de los usuarios finales acaban encontrando defectos graves de manera más sencilla.
 
 
-# Ajuste de _sprint_
+#### Ajuste de _sprint_
 
 La reunión de ajuste de _sprint_ es opcional y permite, a mitad del _sprint_ aproximadamente, el realizar los ajustes necesarios si existe una desviación conocida o que prevemos que puede afectar la entrega final a cliente.
 
@@ -266,7 +263,7 @@ En esta reunión, se trata la desviación, se inicia una estrategia para solucio
 En esta reunión es totalmente obligatorio, si se realiza, que estén las áreas afectadas.
 
 
-# Fase de validación
+#### Fase de validación
 
 Una vez se supera la fase anterior, comienza la fase de validación, donde existe una integración con el entorno de PRE y se realiza la ejecución del plan de pruebas.
 
@@ -287,7 +284,7 @@ Para que esta fase se realice de manera correcta, es necesario la realización d
 * **Versionado:** La entrega de esta fase es la versión a la que se le ha dado el OK de manera interna, por todas las áreas del proyecto.
 
 
-# Construcción del informe de entrega
+#### Construcción del informe de entrega
 
 El informe de entrega de versión, es uno de los puntos más importantes de cara a realizar el aviso a cliente para que pueda certificar. Este informe, debe de contener los siguientes puntos:
 
@@ -297,7 +294,7 @@ El informe de entrega de versión, es uno de los puntos más importantes de cara
 * **Resumen:** Se explica el resumen total del proceso que se ha seguido en el _sprint_ y si existiese algún tipo de problema detectado y que se está trabajando en ello, se debe de especificar aquí para que el cliente tenga toda la visión de la entrega.
 
 
-# Reorganización de tareas
+#### Reorganización de tareas
 
 Tras la validación por parte del área de calidad y en el caso de que en la misma se encuentren un porcentaje alto de defectos críticos o bloqueantes, es necesario realizar una reunión de reorganización.
 
@@ -306,7 +303,7 @@ En esta reunión, se marcan las pautas a seguir para la resolución de estos def
 En esta reunión es totalmente obligatorio que estén las áreas afectadas.
 
 
-# Fase de certificación
+#### Fase de certificación
 
 La fase de certificación comienza con el despliegue de la versión en el entorno de _QA_. De esta manera, los clientes pueden realizar una certificación, basándose en los criterios de aceptación, para comprobar que lo que se les entrega cumple con las expectativas que buscaban.
 
@@ -321,21 +318,21 @@ Para que esta fase se realice de manera correcta, se deben de seguir los siguien
 Una vez que se cumplan estos puntos, el _sprint_ se da por finalizado y obtenemos una versión estable y garantizada para el usuario final.
 
 
-# Entrega de versión certificada
+#### Entrega de versión certificada
 
 La entrega se inicia cuando se captura la versión estable y certificada por cliente y es desplegada al entorno de producción para ser entregada a los usuarios finales.
 
-Antes de dar acceso a los clientes finales, es necesario que el área de calidad y procesos realice una regresión mínima que garantice que todo se ha desplegado de manera correcta y adecuada.
+Antes de dar acceso a los clientes finales, es necesario que el _Área de Calidad y Procesos_ realice una regresión mínima que garantice que todo se ha desplegado de manera correcta y adecuada.
 
 
-# Retrospectiva, cierre de _sprint_ e inicio de nuevo _sprint_
+#### Retrospectiva, cierre de _sprint_ e inicio de nuevo _sprint_
 De cara a mantener la sostenibilidad del tiempo por parte de las diferentes áreas de trabajo, se acuerda la unificación de una única reunión para la realización de los tres hitos finales del _sprint_.
 
 La retrospectiva, permite interactuar entre todos los miembros del equipo, mediante las siguientes cuestiones:
 
-* ¿Qué ha funcionado bien?
-* ¿Qué hay que mejorar?
-* ¿Qué no ha funcionado bien?
-* ¿Qué vamos a hacer para mejorarlo?
+* **¿Qué ha funcionado bien?**
+* **¿Qué hay que mejorar?**
+* **¿Qué no ha funcionado bien?**
+* **¿Qué vamos a hacer para mejorarlo?**
 
 Cada persona escribirá en un post-it las respuestas que necesite y se ordenarán en la pizarra, de esta manera se sacarán las medidas correctoras y mejoras para los siguientes _sprints_ o proyectos, si es la última retrospectiva del mismo. En el caso de que no sea la última retrospectiva del proyecto, se realiza también un cierre de sprint, ordenando las tareas en el siguiente y priorizándolas adecuadamente y se procede a abrir el siguiente, comenzando el trabajo desde ese mismo momento.
