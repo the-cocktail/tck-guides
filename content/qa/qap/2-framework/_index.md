@@ -10,7 +10,7 @@ chapter: true
 
 ## Marco de trabajo
 
-El marco de trabajo propuesto en dicho documento aúna en la definición, optimización y unificación de un único proceso de Calidad.
+El marco de trabajo propuesto en dicho documento aúna en la definición, optimización y unificación de un único _Proceso de Calidad_.
 
 Dentro de la potenciación buscada, a nivel tecnológico por TCK, es plausible la necesidad de realizar ciertas unificaciones en procesos y herramientas que permitan explotar, a nivel global, todos los datos y acciones de los diferentes proyectos de la compañía. De esta manera, se agrupa y configura un único marco de trabajo, formado por diferentes módulos reutilizables en base al tipo de proyecto y con la flexibilidad demandada en TCK.
 
@@ -22,17 +22,17 @@ La implantación es progresiva, cumpliendo una serie de etapas según la necesid
 
 Una vez que se finalice esta implantación, quedarán definidas las pautas y el marco de trabajo unificado, pudiendo realizar una explotación global de proyectos en TCK.
 
-La metodología que se ha seleccionado para esta implantación es Agile. Con la particularidad de implementar y ejecutar una estrategia de gestión personalizada, si se diera el caso, en cada proyecto. El objetivo principal, es llevar a cabo una serie de mejoras evolutivas a través de prácticas eficientes, enmarcándose en fases, que se explican a lo largo del documento. De manera resumida, son las siguientes:
+La metodología que se ha seleccionado para esta implantación es _Agile_. Con la particularidad de implementar y ejecutar una estrategia de gestión personalizada, si se diera el caso, en cada proyecto. El objetivo principal, es llevar a cabo una serie de mejoras evolutivas a través de prácticas eficientes, enmarcándose en fases, que se explican a lo largo del documento. De manera resumida, son las siguientes:
 
 ![](/images/qap/diagrama-de-fases.png)
 
-El flujo de trabajo que se va a implementar es el estándar, con adecuaciones necesarias y demandadas por la compañía, teniendo un backlog de elementos que entran y salen en base al trabajo realizado. Dentro de este flujo, se incorporan elementos Scrum, que se basan en las reuniones diarias (Daily meeting), la gestión y los análisis retrospectivos que mejoran el proceso sprint tras sprint.
+El flujo de trabajo que se va a implementar es el estándar, con adecuaciones necesarias y demandadas por la compañía, teniendo un _backlog_ de elementos que entran y salen en base al trabajo realizado. Dentro de este flujo, se incorporan elementos _Scrum_, que se basan en las reuniones diarias (_Daily meetings_), la gestión y los análisis retrospectivos que mejoran el proceso _sprint_ tras _sprint_.
 
-Algunos puntos clave que aportan valor a la selección de la metodología que se ha adquirido para el proceso de calidad, son los siguientes:
+Algunos puntos clave que aportan valor a la selección de la metodología que se ha adquirido para el proceso de calidad son los siguientes:
 
 * Introducción de soluciones oportunas en “problemas” eventuales.
 * Mayor análisis en tareas realizadas.
 * Mejora la iteración entre personas del proyecto.
 * Favorece una mayor adaptabilidad de las herramientas utilizadas.
 
-El primer paso para entender de manera correcta el marco trabajo es explicar, punto por punto y con detalle, los elementos que se van a utilizar. Tras ello, se explican los sprint, fases y ciclos que van a englobar el modelo de trabajo a realizar.
+El primer paso para entender de manera correcta el marco trabajo es explicar, punto por punto y con detalle, los elementos que se van a utilizar. Tras ello, se explican los _sprints_, fases y ciclos que van a englobar el modelo de trabajo a realizar.
