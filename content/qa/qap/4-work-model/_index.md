@@ -3,10 +3,6 @@ title: 4.- Modelo de trabajo
 slug: qap-work-model
 ---
 
-## Área de Calidad y Procesos
-
-### Proceso de control de Calidad
-
 En base al proceso y los elementos descritos en los puntos anteriores, se diseña un modelo de trabajo acorde a las necesidades de _TCK_ y sus proyectos.
 
 El proceso de Calidad y, por lo tanto, el modelo que se va a describir, va a organizarse en diferentes fases, que se van a tratar con detalle en los siguientes puntos. Estas descripciones, ordenan la manera de trabajar a lo largo de los _sprints_, dentro de un proyecto.

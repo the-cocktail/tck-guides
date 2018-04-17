@@ -3,9 +3,6 @@ title: 1.- Contexto
 slug: qap-context
 ---
 
-## Área de Calidad y Procesos
-### Proceso de control de Calidad
-
 #### Resumen
 Descripción y definición del proceso de control de Calidad para The Cocktail (en adelante, _TCK_). Agrupa y explica los procesos, pautas e hitos a seguir por cada área de trabajo, de cara a garantizar el ciclo de vida completo de los proyectos de la compañía.
 

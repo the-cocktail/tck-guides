@@ -3,10 +3,6 @@ title: 3.- Elementos de trabajo
 slug: qap-work-elements
 ---
 
-## Área de Calidad y Procesos
-
-### Proceso de control de Calidad
-
 En base al marco que se ha descrito anteriormente, se han especificado una serie de elementos que engloban el trabajo a realizar en las diferentes áreas y permite entregar con garantía a los clientes.
 
 La jerarquía de los elementos ha de cumplirse estrictamente, ya que todo el trabajo que se va a realizar en cada _sprint_ se basa en ello. La idea principal de esta jerarquía es que los elementos superiores agrupan a los inferiores, capturando el valor propio de negocio, cuanto más arriba esté el elemento.
