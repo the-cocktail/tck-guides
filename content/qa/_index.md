@@ -12,3 +12,7 @@ Esta demanda debía de cubrir las siguientes zonas:
 * Situar a _The Cocktail_ como una de las empresas punteras de cara al aseguramiento de la calidad.
 
 Con este contexto, en _The Cocktail_ podíamos seguir haciendo el excelente trabajo por el que se nos conoce y potenciarlo de manera exponencial con un proceso de control de calidad que unifica todos los proyectos en los que nos involucramos.
+
+### Créditos
+
+Si tienes alguna duda o pregunta sobre el _Proceso de Calidad_ que hemos implantado en _The Cocktail_ escríbenos a **_qap@the-cocktail.com_**.
