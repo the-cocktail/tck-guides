@@ -12,7 +12,7 @@ En los siguientes puntos se define el marco de trabajo, se trata, punto por punt
 Dentro de cada fase, se describe una serie de pautas y puntos a seguir, en forma de reunión, para que la interlocución entre las diferentes personas que integran los proyectos se realice de la forma adecuada y se pueda cerrar la fase con total garantía.
 
 
-#### Fase de inmersión
+### F0 - Fase de inmersión
 
 Es la fase inicial. En ella se va a diseñar el _mapa de proyecto_ que se va a seguir a lo largo de los _sprints_ a realizar y los requisitos que se van a utilizar en el resto de fases.
 
@@ -104,7 +104,7 @@ Un _mapa de proyecto_ debe de contener:
 Toda la información debe de estar incluida en la unidad de equipo abierta previamente para organizar toda la documentación del proyecto.
 
 
-#### Fase de definición
+### F1 - Fase de definición
 
 Una vez hemos cerrado la entrega del _mapa de proyecto_ con su información al completo y los requisitos realizados, pasamos a la fase de definición**, donde comenzamos a invertir el esfuerzo en la definición de las historias de usuario y como entregable, la realización del **documento funcional con toda la información completa y detallada** de lo que va a ser el proyecto.
 
@@ -208,7 +208,7 @@ El documento funcional debe de ser el primer paso a la hora de comenzar el desar
 * Es la hoja de ruta para que todas las personas involucradas en el proyecto tengan toda la información del mismo y puedan trabajar en la misma línea.
 
 
-#### Fase de implementación
+### F2 - Fase de implementación
 
 La fase de implementación es la fase de desarrollo (no solo técnico, si no también funcional o aplicado a cada área) propiamente dicha. Este desarrollo se basa en la documentación funcional y en las historias de usuario. Además, de toda la información que va proporcionando el resto de áreas para que el desarrollo sea completo.
 
@@ -259,7 +259,7 @@ En esta reunión, se trata la desviación, se inicia una estrategia para solucio
 En esta reunión es totalmente obligatorio, si se realiza, que estén las áreas afectadas.
 
 
-#### Fase de validación
+### F3 - Fase de validación
 
 Una vez se supera la fase anterior, comienza la fase de validación, donde existe una integración con el entorno de PRE y se realiza la ejecución del plan de pruebas.
 
@@ -299,9 +299,9 @@ En esta reunión, se marcan las pautas a seguir para la resolución de estos def
 En esta reunión es totalmente obligatorio que estén las áreas afectadas.
 
 
-#### Fase de certificación
+### F4 - Fase de certificación
 
-La fase de certificación comienza con el despliegue de la versión en el entorno de _QA_. De esta manera, los clientes pueden realizar una certificación, basándose en los criterios de aceptación, para comprobar que lo que se les entrega cumple con las expectativas que buscaban.
+La fase de certificación comienza con el despliegue de la versión en el _entorno de QA_. De esta manera, los clientes pueden realizar una certificación, basándose en los criterios de aceptación, para comprobar que lo que se les entrega cumple con las expectativas que buscaban.
 
 ![](/images/qap/fase-de-certificacion.png)
 
