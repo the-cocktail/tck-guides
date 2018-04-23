@@ -2,6 +2,7 @@
 title: Proceso de control de Calidad
 slug: qap
 chapter: true
+pre: "<i class='fa fa-book'></i> "
 ---
 
 ### Guía de referencia de
