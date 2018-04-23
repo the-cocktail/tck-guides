@@ -58,10 +58,11 @@ Dado que el objetivo principal de las _pull requests_ es que el resto del equipo
 
 Consideraciones generales:
 
-* Las _pull requests_ irán contra las ramas encargadas de la unificación del código _master_, _integration_, _release_... en cualquier caso nunca contra _staging_.
+* Las _pull requests_ irán contra las ramas encargadas de la unificación del código _master_, _integration_, _release_.
+* Aunque no es la norma general es posible que algunos flujos de validación de cliente y trabajo requieran que se puedan realizar _pull request_ contra _staging_. En ese caso, en la documentación del proyecto se detallará el flujo correcto.
 * Las _pull requests_ no son una interfaz gráfica para hacer un _merge_.
 * Escribir un título descriptivo e indicar el ticket: `[Id del ticket] Título del ticket`
-* Utilizar etiquetas para identificar el tipo y el estado: WIP, feature...
+* Utilizar etiquetas para identificar el tipo y el estado.
 * Asignar los revisores adecuados.
 * Si el proyecto tiene releases planificadas, usar las milestones para saber a cual corresponde. Por ejemplo una milestone con la fecha planificada del despliegue.
 
@@ -71,6 +72,8 @@ Pasos para la revisión:
 2. Probar los cambios en local y ver que funciona como se explica.
 3. Revisar el código de los commits.
 4. Si aplica, intentar dar feedback constructivo educadamente.
+
+Debemos de sacar tiempo para poder realizar revisiones de _pull request_ ya que es nuestra mejor herramienta tanto para presentar desarrollos con mejor calidad como para fomentar el aprendizaje y generar discusión para la mejora de código.
 
 #### Plantillas
 
@@ -108,7 +111,12 @@ Las _pull request_ no son un recordatorio o un log de funcionalidades en desarro
 * Si fuera necesario hacer cambios o seguir desarrollando, se deberá cancelar la _pull request_, realizar los cambios correspondientes y después volverla a crear.
 * La aprobación de la _pull request_ no significa que se deba mergear automáticamente.
 
-La vida útil de una _pull request_ no debe más de una semana, dependiendo del proyecto y sus periodos de aprobación/despliegue. Una _pull request_ que se dilata en el tiempo demasiado pierde su sentido, al no estar su código actualizado y poder generar conflictos. En caso de no poder hacer el merge por cualquier razón, se deberá de cerrar y cuando vuelva a ser posible hacerlo, actualizar la rama y abrir una nueva _pull request_.
+La vida útil de una _pull request_ no debe ser más de unas semanas, dependiendo del proyecto y sus periodos de aprobación/despliegue. Una _pull request_ que se dilata en el tiempo demasiado pierde su sentido, al no estar su código actualizado y poder generar conflictos. En caso de finalment no poder hacer el merge por cualquier razón, se deberá de cerrar y cuando vuelva a ser posible hacerlo, actualizar la rama y abrir una nueva _pull request_.
+
+En este punto, el principal foco sería:
+
+* Responsabilizarse de que los desarrollos no se quedan en el olvido por parte de tecnología.
+* Intentar generar el menor ruido posible en Git con los desarrollos pendientes.
 
 Una vez se tenga la aprobación, el tiempo que debe transcurrir entre su merge con _integration_ y su merge con _master_ y futuro despliegue debe ser el menor tiempo posible, con el fin de evitar colisiones y que estás funcionalidades queden fuera de contexto.
 
