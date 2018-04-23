@@ -2,6 +2,7 @@
 title: Guía rápida del Proceso
 slug: guia-rapida-del-proceso
 chapter: true
+pre: "<i class='fa fa-fast-forward'></i> "
 ---
 
 ### Guía rápida del Proceso de
