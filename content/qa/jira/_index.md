@@ -2,13 +2,16 @@
 title: Proceso de trabajo con Jira
 slug: jira
 chapter: true
-pre: "<i class='fa fa-jira'></i> "
+pre: "<i class='fa fa-window-maximize'></i> "
 ---
 
 ### Guía de referencia de
 # Proceso de trabajo con Jira
 
 1. [Contexto](1-context)
+  * [Resumen](1-context/#resumen)
+  * [Objetivo](1-context/#objetivo)
+  * [Guía de áreas de trabajo](1-context/#guía-de-áreas-de-trabajo)
 2. [Introducción a Jira](2-introduction)
   * [Cuadros de Mandos (Dashboards)](2.1-dashboards)
   * [Tareas (Issues)](2.2-issues)
