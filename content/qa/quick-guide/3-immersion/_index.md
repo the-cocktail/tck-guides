@@ -1,5 +1,5 @@
 ---
-title: 03.- F0 - Inmersión
+title: 3.- F0 - Inmersión
 slug: f0-inmersion
 chapter: true
 ---
