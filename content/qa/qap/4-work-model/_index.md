@@ -301,7 +301,8 @@ Para que esta fase se realice de manera correcta, es necesario la realización d
 
 El informe de entrega de versión, es uno de los puntos más importantes de cara a realizar el aviso a cliente para que pueda certificar. Este informe, debe de contener los siguientes puntos:
 
-* **Historias de usuario**: Una sección de las _historias de usuario_ que se van a entregar en este _sprint_ y que el cliente puede certificar y ver en el entorno de QA.
+* **Historias de usuario**: Una sección de las _historias de usuario_ y _criterios de aceptación_ que se van a entregar en este _sprint_ y que el cliente puede certificar y ver en el _entorno de QA_.
+
 * **Historias de usuario en _Gherkin_**: Una sección con la traducción de las historias de usuario pasadas a _Gherkin_ que cubren el test unitario y de integración realizado.
 * **Resultado del plan de pruebas**: Sección donde aparecen estadísticas de la última ejecución del plan de pruebas.
 * **Resumen**: Se explica el resumen total del proceso que se ha seguido en el _sprint_ y si existiese algún tipo de problema detectado y que se está trabajando en ello, se debe de especificar aquí para que el cliente tenga toda la visión de la entrega.
