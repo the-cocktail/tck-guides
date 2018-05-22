@@ -1,4 +1,4 @@
-_historia de usuario_---
+---
 title: 4.- Modelo de trabajo
 slug: qap-work-model
 ---
