@@ -235,24 +235,19 @@ Se pueden aplicar los siguientes criterios para marcar esta definición:
 
 ### F2 - Fase de implementación
 
+
 La fase de implementación es la fase de desarrollo (no solo técnico, si no también funcional o aplicado a cada área) propiamente dicha. Este desarrollo se basa en la documentación funcional y en las _historias de usuario_. Además, de toda la información que va proporcionando el resto de áreas para que el desarrollo sea completo.
 
 ![](/images/qap/fase-de-implementacion.png)
 
-Cada área, debe de participar en la realización de sus diferentes tareas hasta completar las _historias de usuario_ al mínimo detalle y quedarán cerradas para poder ser presentadas a cliente con la entrega de la versión al final del _sprint_.
-
-Desde tecnología, se comienzan a desarrollar las _historias de usuario_, obteniendo, poco a poco toda la información y pudiendo completarse progresivamente. Puede existir la posibilidad de que existan varios _sprints_ en los que existan fases de desarrollo en los que no intervenga tecnología, si no que pudiera ser el desarrollo del resto de áreas.
+Cada área, debe de participar en el desarrollo de las _historias de usuario_ que le apliquen. Desde tecnología, se comienzan a desarrollar las _historias de usuario_ tanto a nivel de _back_ como de _front_. Puede existir la posibilidad de que se creen varios _sprint_ en los que existan fases de desarrollo en los que no intervenga tecnología, siendo completados por el desarrollo del resto de áreas.
 
 En esta fase, se deben de completar los siguientes puntos, para poder tener la garantía suficiente de que se ha realizado de una manera correcta:
 
-* **SEO:** Se define y especifican las tareas de SEO de cara a cubrir las funcionalidades concretas en las _historias de usuario_.
-* **DATA:** Se realizan las tareas específicas del área de DATA para cubrir las _historias de usuario_ que las demanden.
-* **Prototipado:** Se cubrirá la sección de prototipado de las _historias de usuario_ que se van a realizar, cubriendo la necesidad de cada _historia de usuario_.
-* **Diseño:** Basándose en toda la información integrada en las _historias de usuario_, se realiza el diseño de las mismas.
-* **Documentación técnica:** una vez que se vayan completando los puntos anteriores también deberá tener en cuenta si es necesario completar más información por su parte, para que el desarrollo de las mismas sea lo más completo y cerrado. También realizará una documentación técnica en la herramienta que especifique, para registrar todo de cara a posibles cambios o sustituciones en el equipo de personas.
-* **Testing desarrollo:** Antes de dar por finalizada la _historia de usuario_ y pasar al área de calidad para su validación es necesario realizar una serie de pruebas en desarrollo que están dentro del marco de trabajo especificado en la estrategia de testing para _TCK_.
-* **Plan de pruebas:** El área de calidad y procesos, define y completa el plan de pruebas de las _historias de usuario_ basándose en toda la información que han ido aportando el resto de áreas.
-* **Demo:** La entrega de esta fase desemboca en una demo interna que se realiza con las personas que se consideren y cuyo responsable de desarrollo se encargará de mostrar para que se dé el visto bueno para desplegar al entorno de PRE donde se comenzará con su validación.
+* **Desarrollo de las _historias de usuario_**: Cada área realiza el desarrollo apropiado para finalizar y entregar la historia de usuario a cliente dentro del _sprint_ especificado.
+* **Testing desarrollo**: Antes de dar por finalizada la historia de usuario y pasar al área de calidad para su validación es necesario realizar una serie de pruebas en desarrollo que están dentro del marco de trabajo especificado en la estrategia de testing para TCK.
+* **Plan de pruebas**: El _Area de Calidad y Procesos_, define y completa el plan de pruebas de las _historias de usuario_ basándose en toda la información que han ido aportando el resto de áreas.
+* **Demo**: La entrega de esta fase desemboca en una demo interna que se realiza con las personas que se consideren, y cuyo responsable de desarrollo se encargará de mostrar para que se dé el visto bueno para desplegar al _entorno de PRE_, donde se comenzará con su validación.
 
 Una vez que se completan todos los puntos anteriores, se puede dar el paso a la siguiente fase. En la entrega de esta fase, la demo, es cuando se da el visto bueno final a todo lo realizado.
 
@@ -261,9 +256,7 @@ Una vez que se completan todos los puntos anteriores, se puede dar el paso a la 
 
 El plan de pruebas que se especifica en esta fase, está cumplimentado con una serie de casos de prueba, que a su vez, agrupa una serie de pasos de prueba.
 
-
 De cara a realizar una serie de buenas prácticas para crear un buen plan de pruebas, se deben de cumplir los siguientes puntos:
-
 
 * **Entendibles:** el caso de prueba tiene que realizarse manera sencilla, con un lenguaje claro y fácil de ejecutar.
 * **Eficientes:** El caso de prueba debe de alcanzar la mayor cobertura posible y que encuentre el mayor número de errores.
@@ -286,7 +279,7 @@ En esta reunión es totalmente obligatorio, si se realiza, que estén las áreas
 
 ### F3 - Fase de validación
 
-Una vez se supera la fase anterior, comienza la fase de validación, donde existe una integración con el entorno de PRE y se realiza la ejecución del plan de pruebas.
+Una vez se supera la fase anterior, comienza la fase de validación, donde existe una integración con el _entorno de PRE_ y se realiza la ejecución del plan de pruebas.
 
 ![](/images/qap/fase-de-validacion.png)
 
@@ -295,7 +288,6 @@ Esta ejecución nos da el resultado positivo o negativo de los elementos de trab
 Estos defectos se introducen en el _backlog_, correctamente priorizados y se irán metiendo al _sprint_ de manera progresiva y en orden de prioridad, para completar, cuanto antes, los críticos. Cuando el defecto se soluciona, se vuelve a ejecutar el caso de prueba que había quedado fallado y se comprueba que, efectivamente, todo funciona correctamente.
 
 Esta etapa se da por finalizada cuando todas las _historias de usuario_, que estaban priorizadas, tienen un funcionamiento correcto y adecuado y son aptos para continuar con la siguiente fase.
-
 
 Para que esta fase se realice de manera correcta, es necesario la realización de los siguientes puntos:
 
@@ -309,10 +301,10 @@ Para que esta fase se realice de manera correcta, es necesario la realización d
 
 El informe de entrega de versión, es uno de los puntos más importantes de cara a realizar el aviso a cliente para que pueda certificar. Este informe, debe de contener los siguientes puntos:
 
-* **Historias de usuario:** Una sección de las _historias de usuario_ que se van a entregar en este _sprint_ y que el cliente puede certificar y ver en el entorno de QA.
-* **Criterios de aceptación:** Una sección con los criterios de aceptación que van a utilizarse para certificar la _historia de usuario_ en concreto.
-* **Resultado del plan de pruebas:** Sección donde aparecen estadísticas de la última ejecución del plan de pruebas.
-* **Resumen:** Se explica el resumen total del proceso que se ha seguido en el _sprint_ y si existiese algún tipo de problema detectado y que se está trabajando en ello, se debe de especificar aquí para que el cliente tenga toda la visión de la entrega.
+* **Historias de usuario**: Una sección de las _historias de usuario_ que se van a entregar en este _sprint_ y que el cliente puede certificar y ver en el entorno de QA.
+* **Historias de usuario en _Gherkin_**: Una sección con la traducción de las historias de usuario pasadas a _Gherkin_ que cubren el test unitario y de integración realizado.
+* **Resultado del plan de pruebas**: Sección donde aparecen estadísticas de la última ejecución del plan de pruebas.
+* **Resumen**: Se explica el resumen total del proceso que se ha seguido en el _sprint_ y si existiese algún tipo de problema detectado y que se está trabajando en ello, se debe de especificar aquí para que el cliente tenga toda la visión de la entrega.
 
 
 #### Reorganización de tareas
@@ -332,28 +324,28 @@ La fase de certificación comienza con el despliegue de la versión en el _entor
 
 Para que esta fase se realice de manera correcta, se deben de seguir los siguientes puntos:
 
-1. **Regresión en QA:** Antes de dar el OK a cliente para que acceda al entorno para certificar, el área de calidad y procesos, realiza una mínima regresión asegurándose de que todo está desplegado de manera adecuada.
+1. **Regresión en QA:** Antes de dar el OK a cliente para que acceda al entorno para certificar, el _Área de Calidad y Procesos_, realiza una mínima regresión asegurándose de que todo está desplegado de manera adecuada.
 2. **Aceptación de criterios:** El cliente certifica las _historias de usuario_ con los criterios de aceptación que se acordaron al inicio.
 3. **Retrospectiva:** Es la entrega final de esta fase y que da el pistoletazo de salida al despliegue a producción.
 
 Una vez que se cumplan estos puntos, el _sprint_ se da por finalizado y obtenemos una versión estable y garantizada para el usuario final.
 
 
-#### Entrega de versión certificada
+#### Entrega de versión _certificada_
 
-La entrega se inicia cuando se captura la versión estable y certificada por cliente y es desplegada al entorno de producción para ser entregada a los usuarios finales.
+La entrega se inicia cuando se captura la versión estable y _certificada_ por cliente y es desplegada al entorno de producción para ser entregada a los usuarios finales.
 
 Antes de dar acceso a los clientes finales, es necesario que el _Área de Calidad y Procesos_ realice una regresión mínima que garantice que todo se ha desplegado de manera correcta y adecuada.
 
 
-#### Retrospectiva, cierre de _sprint_ e inicio de nuevo _sprint_
+#### _Retrospectiva_, cierre de _sprint_ e inicio de nuevo _sprint_
 De cara a mantener la sostenibilidad del tiempo por parte de las diferentes áreas de trabajo, se acuerda la unificación de una única reunión para la realización de los tres hitos finales del _sprint_.
 
-La retrospectiva, permite interactuar entre todos los miembros del equipo, mediante las siguientes cuestiones:
+La _retrospectiva_, permite interactuar entre todos los miembros del equipo, mediante las siguientes cuestiones:
 
 * **¿Qué ha funcionado bien?**
 * **¿Qué hay que mejorar?**
 * **¿Qué no ha funcionado bien?**
 * **¿Qué vamos a hacer para mejorarlo?**
 
-Cada persona escribirá en un post-it las respuestas que necesite y se ordenarán en la pizarra, de esta manera se sacarán las medidas correctoras y mejoras para los siguientes _sprints_ o proyectos, si es la última retrospectiva del mismo. En el caso de que no sea la última retrospectiva del proyecto, se realiza también un cierre de sprint, ordenando las tareas en el siguiente y priorizándolas adecuadamente y se procede a abrir el siguiente, comenzando el trabajo desde ese mismo momento.
+Cada persona escribirá en un _post-it_ las respuestas que necesite y se ordenarán en la pizarra. De esta manera se sacarán las medidas correctoras y mejoras para los siguientes _sprints_ (o proyectos, si es la última retrospectiva del mismo). En el caso de que no sea la última retrospectiva del proyecto, se realiza también un _cierre de sprint_, ordenando las tareas en el siguiente y priorizándolas adecuadamente y se procede a abrir el siguiente, comenzando el trabajo desde ese mismo momento.
