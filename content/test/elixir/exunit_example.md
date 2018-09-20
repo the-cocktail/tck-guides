@@ -33,16 +33,16 @@ Es una librería de test que viene con Elixir y que nos proporciona todo lo nece
 
 * Setup: En algunos casos es necesario ejecutar algún tipo de código antes de lanzar nuestros test, para ello tenemos:
   - setup: es invocado antes de ejecutar a cada uno de los test.
-    ```
-      defmodule Factory.UserTest do
-        setup do
-          {:ok, name: "John"}
+      ```
+        defmodule Factory.UserTest do
+          setup do
+            {:ok, name: "John"}
+          end
+          test "it works", %{name: name} do
+           assert name == "John"
+          end
         end
-        test "it works", %{name: name} do
-          assert name == "John"
-        end
-      end
-    ```
+      ```
 
     - setup_all: es invocado una vez por módulo antes de ejecutar cada uno de los test.
       ```
