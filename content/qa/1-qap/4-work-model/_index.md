@@ -135,7 +135,7 @@ Las _historias de usuario_ deben de cubrir una serie de características para qu
 
 * **Independientes:** Las _historias de usuario_ han de ser independientes, tienen que aportar valor por sí mismas.
 * **Negociables:** Las _historias de usuario_ deben de ser negociables entre las diferentes áreas implicadas de cara a dejar explícito el alcance de la misma.
-* **Valoradas por los clientes:** Cada historia debe de tener un valor total de cara a cliente. Estas deben de ser valoradas como su entrega final.
+* **Valoradas por los clientes:** Cada historia debe de tener un valor total de cara al cliente. Estas deben de ser valoradas como su entrega final.
 * **Estimable:** Las _historias de usuario_ han de poder estimarse para completarlas. Lo ideal es dentro de un _sprint_.
 * **Pequeñas:** Si el tamaño de una _historia de usuario_ no es el adecuado, no puede estimarse. Debe de permitirse el cubrir la funcionalidad en una sola iteración.
 * **Verificables:** Las _historias de usuario_ tienen que cubrir los requisitos y por lo tanto han de poder ser verificables por el área de calidad. Incluso pueden llegar a automatizarse.
@@ -246,7 +246,7 @@ En esta fase, se deben de completar los siguientes puntos, para poder tener la g
 
 * **Desarrollo de las _historias de usuario_**: Cada área realiza el desarrollo apropiado para finalizar y entregar la historia de usuario a cliente dentro del _sprint_ especificado.
 * **Testing desarrollo**: Antes de dar por finalizada la historia de usuario y pasar al área de calidad para su validación es necesario realizar una serie de pruebas en desarrollo que están dentro del marco de trabajo especificado en la estrategia de testing para TCK.
-* **Plan de pruebas**: El _Area de Calidad y Procesos_, define y completa el plan de pruebas de las _historias de usuario_ basándose en toda la información que han ido aportando el resto de áreas.
+* **Plan de pruebas**: El área de _QAP_, define y completa el plan de pruebas de las _historias de usuario_ basándose en toda la información que han ido aportando el resto de áreas.
 * **Demo**: La entrega de esta fase desemboca en una demo interna que se realiza con las personas que se consideren, y cuyo responsable de desarrollo se encargará de mostrar para que se dé el visto bueno para desplegar al _entorno de PRE_, donde se comenzará con su validación.
 
 Una vez que se completan todos los puntos anteriores, se puede dar el paso a la siguiente fase. En la entrega de esta fase, la demo, es cuando se da el visto bueno final a todo lo realizado.
@@ -325,7 +325,7 @@ La fase de certificación comienza con el despliegue de la versión en el _entor
 
 Para que esta fase se realice de manera correcta, se deben de seguir los siguientes puntos:
 
-1. **Regresión en QA:** Antes de dar el OK a cliente para que acceda al entorno para certificar, el _Área de Calidad y Procesos_, realiza una mínima regresión asegurándose de que todo está desplegado de manera adecuada.
+1. **Regresión en QA:** Antes de dar el OK a cliente para que acceda al entorno para certificar, el área de _QAP_, realiza una mínima regresión asegurándose de que todo está desplegado de manera adecuada.
 2. **Aceptación de criterios:** El cliente certifica las _historias de usuario_ con los criterios de aceptación que se acordaron al inicio.
 3. **Retrospectiva:** Es la entrega final de esta fase y que da el pistoletazo de salida al despliegue a producción.
 
@@ -336,7 +336,7 @@ Una vez que se cumplan estos puntos, el _sprint_ se da por finalizado y obtenemo
 
 La entrega se inicia cuando se captura la versión estable y _certificada_ por cliente y es desplegada al entorno de producción para ser entregada a los usuarios finales.
 
-Antes de dar acceso a los clientes finales, es necesario que el _Área de Calidad y Procesos_ realice una regresión mínima que garantice que todo se ha desplegado de manera correcta y adecuada.
+Antes de dar acceso a los clientes finales, es necesario que el área de _QAP_ realice una regresión mínima que garantice que todo se ha desplegado de manera correcta y adecuada.
 
 
 #### _Retrospectiva_, cierre de _sprint_ e inicio de nuevo _sprint_

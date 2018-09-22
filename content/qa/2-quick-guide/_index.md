@@ -1,5 +1,5 @@
 ---
-title: Guía rápida del Proceso
+title: 2. Guía rápida del Proceso
 slug: guia-rapida-del-proceso
 chapter: true
 pre: "<i class='fa fa-fast-forward'></i> "
