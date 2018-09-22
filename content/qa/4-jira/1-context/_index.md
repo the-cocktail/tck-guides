@@ -22,5 +22,5 @@ A continuación se describen las diferentes áreas implicadas en esta documentac
 | **DATA**      | _DATA -_ | Definición de la estrategia digital, medición del sitio, obtención de _KPIs_. Diseño y auditoría de la implementación de analíticas para posterior explotación en herramientas de datos.
 | **SEO**       | _SEO -_  | Estrategia de búsquedas relacionadas y optimización del portal para cliente y usuario. 
 | **Tecnología y Desarrollo** | _DEV -_ | Realización del desarrollo del proyecto, _Back_ y _Front_. Implementación del análisis técnico, planteamiento de infraestructura y arquitectura.
-| **Calidad y Procesos** | _QA -_ | Definir y diseñar un _procedimiento de control de Calidad_. Creación de casos de prueba, ejecución de validaciones. Implementación y seguimiento de _controles de Calidad_.
-| **Gestión** | _GES  -_ | Tareas de gestión y seguimiento a nivel transversal realizadas por los _JP_ y _JPT_ dentro del proyecto.
+| **QAP**       | _QA -_ | Definir y diseñar un _procedimiento de control de Calidad_. Creación de casos de prueba, ejecución de validaciones. Implementación y seguimiento de _controles de Calidad_.
+| **Gestión**   | _GES  -_ | Tareas de gestión y seguimiento a nivel transversal realizadas por los _JP_ y _JPT_ dentro del proyecto.
