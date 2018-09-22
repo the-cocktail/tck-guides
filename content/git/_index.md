@@ -1,4 +1,5 @@
 ---
+ 
 title: Git
 slug: git
 pre: "<i class='fab fa-github'></i> "
@@ -9,7 +10,7 @@ chapter: true
 
 # Git
 
-Esta guía establece la [configuración]({{%relref "config.md" %}}) requerida del git, las [reglas generales]({{%relref "rules.md" %}}) sobre el uso de los repositorios, y la descripción de los distintos [flujos de trabajo]({{%relref "flow.md" %}}) a seguir según el tipo de proyecto.
+Esta guía establece la [configuración]({{%relref "config.md" %}}) requerida del git, las [reglas generales]({{%relref "git/rules.md" %}}) sobre el uso de los repositorios, y la descripción de los distintos [flujos de trabajo]({{%relref "flow.md" %}}) a seguir según el tipo de proyecto.
 
 ### Créditos
 
