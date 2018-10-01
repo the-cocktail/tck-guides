@@ -1,5 +1,5 @@
 ---
-title: 3. Estr. de Entornos de Trabajo
+title: 3. Estrat. Entornos de Trabajo
 slug: portada-de-estrategia-de-entornos-de-trabajo
 chapter: true
 pre: "<i class='fa fa-tasks'></i> "

@@ -1,5 +1,5 @@
 ---
-title: 4. Proceso de trabajo con Jira
+title: 5. Proceso de trabajo con Jira
 slug: jira
 chapter: true
 pre: "<i class='fa fa-window-maximize'></i> "
