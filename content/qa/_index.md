@@ -18,7 +18,8 @@ Con este contexto, en _The Cocktail_ podíamos seguir haciendo el excelente trab
 1. [Proceso de control de Calidad](1-qap)
 2. [Guía rápida del Proceso](2-quick-guide)
 3. [Estrategia de Entornos de Trabajo](3-work-environments-strategy)
-4. [Proceso de trabajo con Jira](4-jira)
+4. [Métricas de calidad de código](4-code-quality-metrics)
+5. [Proceso de trabajo con Jira](5-jira)
 
 ### Créditos
 
