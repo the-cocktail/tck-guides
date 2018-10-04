@@ -7,13 +7,13 @@ En el módulo de proyectos podemos acceder a los proyectos en los que estamos tr
 
 ![](/images/qap/jira/20.png)
 
-1. Proyecto actual: Aquí se muestra el último proyecto al que hemos accedido o en el que estamos en este momento.
+1. **Proyecto actual**: Aquí se muestra el último proyecto al que hemos accedido o en el que estamos en este momento.
 
-2. Proyectos recientes: Son los últimos proyectos donde hemos accedido y hemos estado trabajando.
+2. **Proyectos recientes**: Son los últimos proyectos donde hemos accedido y hemos estado trabajando.
 
-3. Tipos de Proyectos: Una serie de filtros con los tipos de proyectos dados de alta en el Jira de la compañía.
+3. **Tipos de Proyectos**: Una serie de filtros con los tipos de proyectos dados de alta en el Jira de la compañía.
 
-4. Ver todos los proyectos: Desde este enlace se muestra un listado con todos los proyectos que están dados de alta en Jira.
+4. **Ver todos los proyectos**: Desde este enlace se muestra un listado con todos los proyectos que están dados de alta en Jira.
 
 Si accedemos a uno de los proyectos que nos sale en el listado, por defecto se nos mostrará la pizarra del mismo, con un aspecto similar al siguiente:
 
@@ -21,17 +21,17 @@ Si accedemos a uno de los proyectos que nos sale en el listado, por defecto se n
 
 En esta pantalla, podemos observar lo siguiente:
 
-1. Iconos de acceso a submódulos del proyecto: Se muestran a la izquierda de la pantalla, donde podemos acceder a las pizarras, al listado del backlog, versionado, gráficas… (en el caso de ser administrador, también aparece una rueda dentada de ajustes del proyecto al final de la columna).
+1. **Iconos de acceso a submódulos del proyecto**: Se muestran a la izquierda de la pantalla, donde podemos acceder a las pizarras, al listado del backlog, versionado, gráficas… (en el caso de ser administrador, también aparece una rueda dentada de ajustes del proyecto al final de la columna).
 
-2. Filtros rápidos: Configurados desde el sistema, aparecen “Solo mis incidencias” y “Recientemente actualizadas” por defecto.
+2. **Filtros rápidos**: Configurados desde el sistema, aparecen “Solo mis incidencias” y “Recientemente actualizadas” por defecto.
 
-3. Botón de Pizarra: Desde este botón, se puede gestionar la pizarra, crear nuevas o editar las opciones necesarias o acordes a las necesidades del usuario.
+3. **Botón de _Pizarra_*: Desde este botón, se puede gestionar la pizarra, crear nuevas o editar las opciones necesarias o acordes a las necesidades del usuario.
 
-4. Ver en Tempo: Se puede acceder al “Time Tracking” del proyecto, donde se ven las imputaciones y las planificaciones de las tareas.
+4. **Ver en Tempo**: Se puede acceder al “Time Tracking” del proyecto, donde se ven las imputaciones y las planificaciones de las tareas.
 
-5. Estados actuales de los elementos del proyecto: Son las columnas de la pizarra. Dependiendo del esquema seleccionado por el proyecto, aparecen unas columnas u otras (en este caso es un kanban al ser un proyecto interno de un área en concreto).
+5. **Estados actuales de los elementos del proyecto**: Son las columnas de la pizarra. Dependiendo del esquema seleccionado por el proyecto, aparecen unas columnas u otras (en este caso es un kanban al ser un proyecto interno de un área en concreto).
 
-6. Elementos del proyecto: Dentro de cada columna de la pizarra, se muestran los elementos que están en activo en el proyecto para un sprint o entrega en concreto.
+6. **Elementos del proyecto**: Dentro de cada columna de la pizarra, se muestran los elementos que están en activo en el proyecto para un sprint o entrega en concreto.
 
 
 ## Iconos de acceso a submódulos
@@ -40,35 +40,35 @@ Están situados a la izquierda de la página principal del proyecto y nos muestr
 
 ![](/images/qap/jira/22.png)
 
-1. Trabajo pendiente: Al pulsar en el submódulo de trabajo pendiente entramos en el listado y organización de los elementos de trabajo del proyecto.
+1. **Trabajo pendiente**: Al pulsar en el submódulo de trabajo pendiente entramos en el listado y organización de los elementos de trabajo del proyecto.
 
-2. Sprints Activos: Entramos a la vista de la pizarra del sprint activo que tengamos en el proyecto.
+2. **Sprints Activos**: Entramos a la vista de la pizarra del sprint activo que tengamos en el proyecto.
 
-3. Entregas: Este submódulo nos reportará las entregas que realizamos en el proyecto en base a las versiones de código que vayamos entregando a validación por parte del equipo de Calidad o a certificación de Cliente.
+3. **Entregas**: Este submódulo nos reportará las entregas que realizamos en el proyecto en base a las versiones de código que vayamos entregando a validación por parte del equipo de Calidad o a certificación de Cliente.
 
-4. Informes: Según el sprint activo o los elementos de trabajo que tengamos, aparecen una serie de gráficas y métricas que nos muestran el estado en el que se encuentra el proyecto en ese momento.
+4. **Informes**: Según el sprint activo o los elementos de trabajo que tengamos, aparecen una serie de gráficas y métricas que nos muestran el estado en el que se encuentra el proyecto en ese momento.
 
-5. Incidencias: Se muestra un filtro rápido con los elementos abiertos en el proyecto. Siendo incidencias, cualquier elemento del tipo: “historia de usuario”, “Tarea” o “Error”.
+5. **Incidencias**: Se muestra un filtro rápido con los elementos abiertos en el proyecto. Siendo incidencias, cualquier elemento del tipo: “historia de usuario”, “Tarea” o “Error”.
 
-6. Componentes: Cada elementos del proyecto se puede “componentizar”. De esta manera podemos añadir diferentes elementos o incidencias a un componente y cuando estén finalizadas, sabremos que el componente está finalizado. Los componentes están compartidos entre los proyectos.
+6. **Componentes**: Cada elementos del proyecto se puede “componentizar”. De esta manera podemos añadir diferentes elementos o incidencias a un componente y cuando estén finalizadas, sabremos que el componente está finalizado. Los componentes están compartidos entre los proyectos.
 
-7. Timesheets: Desde este enlace, se puede acceder a una vista rápida de las imputaciones y planificaciones realizadas en el proyecto para tener un control del tiempo invertido o que se invertirá en el mismo.
+7. **Timesheets**: Desde este enlace, se puede acceder a una vista rápida de las imputaciones y planificaciones realizadas en el proyecto para tener un control del tiempo invertido o que se invertirá en el mismo.
 
-8. Complementos: El enlace de complementos no está en uso en TCK.
+8. **Complementos**: El enlace de complementos no está en uso en TCK.
 
-9. Enlaces rápidos: Se pueden añadir una serie de enlaces rápidos a los proyectos para que todo el equipo tenga acceso de un solo vistazo. Por ejemplo a la URL del site de pruebas.
+9. **Enlaces rápidos**: Se pueden añadir una serie de enlaces rápidos a los proyectos para que todo el equipo tenga acceso de un solo vistazo. Por ejemplo a la URL del site de pruebas.
 
-10. Configuración del proyecto (solo con usuarios administradores): Se accede a las diferentes opciones de configuración del proyecto.
+10. **Configuración del proyecto** (solo con usuarios administradores): Se accede a las diferentes opciones de configuración del proyecto.
 
 ## Filtros rápidos
 
 En la cabecera de cada submódulo, aparecen una serie de filtros y un buscador para interaccionar con los elementos de trabajo del proyecto:
 
-1. Lupa: Podemos realizar cualquier tipo de búsqueda de elemento de trabajo, filtrando por lo que consideremos.
+1. **Lupa**: Podemos realizar cualquier tipo de búsqueda de elemento de trabajo, filtrando por lo que consideremos.
 
-2. Solo mis incidencias: se realiza un filtro con las incidencias en las que estamos como responsable (no las que hemos creado nosotros).
+2. **Solo mis incidencias**: se realiza un filtro con las incidencias en las que estamos como responsable (no las que hemos creado nosotros).
 
-3. Recientemente actualizadas: aparecen los elementos que hemos actualizado nosotros recientemente.
+3. **Recientemente actualizadas**: aparecen los elementos que hemos actualizado nosotros recientemente.
 
 ## Botón de _Pizarra_
 
@@ -76,17 +76,17 @@ En la parte de la derecha, en la cabecera, aparece un botón de _“Pizarra”_,
 
 ![](/images/qap/jira/23.png)
 
-1. Configurar: Desde esta opción se puede configurar la pizarra actual del proyecto para adecuarla a las necesidades que se tengan en ese momento.
+1. **Configurar**: Desde esta opción se puede configurar la pizarra actual del proyecto para adecuarla a las necesidades que se tengan en ese momento.
 
-2. Copiar: Se puede copiar la pizarra actual para llevarla a todos los proyectos que se considere.
+2. **Copiar**: Se puede copiar la pizarra actual para llevarla a todos los proyectos que se considere.
 
-3. Crear Pizarra: Pulsando en esta opción se pueden crear pizarras nuevas y personalizadas de scrum y de kanban.
+3. **Crear _Pizarra_**: Pulsando en esta opción se pueden crear pizarras nuevas y personalizadas de scrum y de kanban.
 
-4. Mostrar (Ocultar) vista detallada / Ampliar todos los carriles / Contraer todos los carriles: En estas opciones ampliamos o contraemos la información para ver más detalle en el panel.
+4. **Mostrar (Ocultar) vista detallada / Ampliar todos los carriles / Contraer todos los carriles**: En estas opciones ampliamos o contraemos la información para ver más detalle en el panel.
 
-5. Ocultar (Mostrar) etiquetas de épicas: En esta opción hacemos aparecer o desaparecer las diferentes etiquetas de las épicas, siempre y cuando las historias de usuario estén enlazadas a ellas.
+5. **Ocultar (Mostrar) etiquetas de épicas**: En esta opción hacemos aparecer o desaparecer las diferentes etiquetas de las épicas, siempre y cuando las historias de usuario estén enlazadas a ellas.
 
-6. Imprimir tarjetas: En esta opción se muestran las tarjetas de la pizarra en un formato imprimible para poder compartir con todo el equipo.
+6. **Imprimir tarjetas**: En esta opción se muestran las tarjetas de la pizarra en un formato imprimible para poder compartir con todo el equipo.
 
 ## Ver en Tempo
 
@@ -116,17 +116,14 @@ Los elementos de trabajo dentro de la pizarra tienen este aspecto:
 
 En cada elemento, dentro de la pizarra se observa lo siguiente:
 
-* ID: Se muestra el ID único del elemento, formado por las siglas del proyecto y un número que no se repite.
+* **ID**: Se muestra el ID único del elemento, formado por las siglas del proyecto y un número que no se repite.
 
-* Prioridad: La prioridad se marca en base a la necesidad de resolución del elemento.
+* **Prioridad**: La prioridad se marca en base a la necesidad de resolución del elemento.
 
-* Título: Título marcado en el elemento de trabajo.
+* **Título**: Título marcado en el elemento de trabajo.
 
-* Estimación: La estimación se muestra en un círculo gris debajo de la foto del responsable del elemento.
+* **Estimación**: La estimación se muestra en un círculo gris debajo de la foto del responsable del elemento.
 
-* Responsable: La persona encargada de realizar el elemento de trabajo.
-
-
-
+* **Responsable**: La persona encargada de realizar el elemento de trabajo.
 
 ![](/images/qap/jira/27.png)
