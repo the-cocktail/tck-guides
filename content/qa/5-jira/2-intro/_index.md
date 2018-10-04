@@ -11,7 +11,7 @@ En los siguientes puntos, se detallan los módulos principales, que funcionalida
 
 ## Módulos principales de Jira
 
-Los módulos principales de _Jira_ se muestran, en primera instancia, en la cabecera de la herramienta (personalizada para _The Cocktail_).
+Los módulos principales de _Jira_ se muestran, en primera instancia, en la cabecera de la herramienta (personalizada para [_The Cocktail_](https://the-cocktail.com)).
 
 El acceso se realiza desde _GSuite_, proporcionando acceso directo desde la cuenta personal de cada trabajador ya dada de alta en la compañía.
 
@@ -21,9 +21,9 @@ La información que se puede aportar de cada módulo, presente en la cabecera, e
 
 * [**Proyectos**](2-projects): Desde este menú se accede a los proyectos que tenemos acceso y en los que estamos trabajando actualmente.
 
-* **Tareas**: Este módulo es el que se utiliza para crear, modificar, buscar o eliminar consultas propias de proyectos o de datos relacionados con toda la información presente en la herramienta.
+* [**Tareas**](3-issues): Este módulo es el que se utiliza para crear, modificar, buscar o eliminar consultas propias de proyectos o de datos relacionados con toda la información presente en la herramienta.
 
-* **Tempo**: En este módulo se pueden consultar imputaciones, tareas trabajadas, _plannings_ de equipos o de usuarios y gestionar el tiempo dedicado a las tareas de cada proyecto.
+* [**Tempo**](4-tempo): En este módulo se pueden consultar imputaciones, tareas trabajadas, _plannings_ de equipos o de usuarios y gestionar el tiempo dedicado a las tareas de cada proyecto.
 
 * **Pizarras**: Las pizarras son las páginas donde se muestran los elementos que se están trabajando en cada proyecto, en qué estado están y nos permiten una rápida gestión del _sprint_ actual en un vistazo.
 

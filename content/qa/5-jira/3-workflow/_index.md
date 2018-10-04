@@ -3,7 +3,7 @@ title: 3.- Flujo de trabajo en Jira
 slug: workflow
 ---
 
-En este punto se describe el flujo de trabajo previsto en _Jira_ para _The Cocktail_, cómo se interactúa con los estados de la herramienta, y qué responsabilidades tiene cada perfil.
+En este punto se describe el flujo de trabajo previsto en _Jira_ para [_The Cocktail_](https://the-cocktail.com), cómo se interactúa con los estados de la herramienta, y qué responsabilidades tiene cada perfil.
 
 Es imprescindible que todos los integrantes de un proyecto utilicen este manual, y que el equipo unifique como se interactúa con la herramienta.
 
@@ -80,4 +80,4 @@ Si la revisión tiene un resultado correcto, la tarea pasa a estado _“Cerrado�
 
 ## _Cerrado_
 
-Este estado es el definitivo, y el que marca la definición de _“done”_ de los proyectos de _The Cocktail_. En este momento, el elemento ha sido revisado por el área correspondiente y **se puede proceder a la  entrega a cliente para certificar**.
+Este estado es el definitivo, y el que marca la definición de _“done”_ de los proyectos de [_The Cocktail_](https://the-cocktail.com). En este momento, el elemento ha sido revisado por el área correspondiente y **se puede proceder a la  entrega a cliente para certificar**.
