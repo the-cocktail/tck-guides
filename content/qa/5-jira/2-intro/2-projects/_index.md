@@ -25,7 +25,7 @@ En esta pantalla, podemos observar lo siguiente:
 
 2. **Filtros rápidos**: Configurados desde el sistema, aparecen “Solo mis incidencias” y “Recientemente actualizadas” por defecto.
 
-3. **Botón de _Pizarra_*: Desde este botón, se puede gestionar la pizarra, crear nuevas o editar las opciones necesarias o acordes a las necesidades del usuario.
+3. **Botón de _Pizarra_**: Desde este botón, se puede gestionar la pizarra, crear nuevas o editar las opciones necesarias o acordes a las necesidades del usuario.
 
 4. **Ver en Tempo**: Se puede acceder al “Time Tracking” del proyecto, donde se ven las imputaciones y las planificaciones de las tareas.
 
