@@ -15,11 +15,12 @@ Con este contexto, en [_The Cocktail_](https://the-cocktail.com) podíamos segui
 
 ### Documentos
 
-1. [Proceso de control de Calidad](1-qap)
-2. [Guía rápida del Proceso](2-quick-guide)
-3. [Estrategia de Entornos de Trabajo](3-work-environments-strategy)
-4. [Métricas de calidad de código](4-code-quality-metrics)
-5. [Proceso de trabajo con Jira](5-jira)
+1. [¿Qué hacemos en QAP?](1-what-do-we-do)
+2. [Proceso de control de Calidad](2-qap)
+3. [Guía rápida del Proceso](3-quick-guide)
+4. [Estrategia de Entornos de Trabajo](4-work-environments-strategy)
+5. [Métricas de calidad de código](5-code-quality-metrics)
+6. [Proceso de trabajo con Jira](6-jira)
 
 ### Créditos
 
