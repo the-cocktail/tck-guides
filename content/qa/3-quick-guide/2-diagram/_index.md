@@ -1,5 +1,5 @@
 ---
-title: 2.- Diagrama de Fases
+title: 3.2.- Diagrama de Fases
 slug: diagrama-de-fases
 chapter: true
 ---

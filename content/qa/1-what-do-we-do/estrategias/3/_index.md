@@ -1,5 +1,5 @@
 ---
-title: 1.6.3- Estrategias (3/5)
+title: 1.5.3- Estrategias (3/5)
 slug: estrategias-3
 chapter: true
 ---
