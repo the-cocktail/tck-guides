@@ -1,5 +1,5 @@
 ---
-title: 4.- Modelo de trabajo
+title: 2.4.- Modelo de trabajo
 slug: qap-work-model
 ---
 

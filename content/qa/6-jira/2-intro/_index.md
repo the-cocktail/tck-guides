@@ -1,5 +1,5 @@
 ---
-title: 2.- Introducción a Jira
+title: 6.2.- Introducción a Jira
 slug: intro
 ---
 
