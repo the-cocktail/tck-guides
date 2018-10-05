@@ -1,5 +1,5 @@
 ---
-title: 3.- Flujo de trabajo en Jira
+title: 6.3.- Flujo de trabajo en Jira
 slug: workflow
 ---
 

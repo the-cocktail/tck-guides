@@ -1,5 +1,5 @@
 ---
-title: 6.- F3 - Validación
+title: 3.6.- F3 - Validación
 slug: f3-validation
 chapter: true
 ---
