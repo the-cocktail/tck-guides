@@ -1,5 +1,5 @@
 ---
-title: 4. Métricas de calidad de código
+title: 5. Métricas de calidad de código
 slug: code-metrics
 chapter: false
 pre: "<i class='fa fa-table'></i> "

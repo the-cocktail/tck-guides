@@ -1,5 +1,5 @@
 ---
-title: 1. Proceso de control de Calidad
+title: 2. Proceso de control de...
 slug: qap
 chapter: true
 pre: "<i class='fa fa-book'></i> "
