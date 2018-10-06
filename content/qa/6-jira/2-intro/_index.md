@@ -15,6 +15,10 @@ Los módulos principales de _Jira_ se muestran, en primera instancia, en la cabe
 
 El acceso se realiza desde _GSuite_, proporcionando acceso directo desde la cuenta personal de cada trabajador ya dada de alta en la compañía.
 
+Una vez accedemos, la cabecera con sus módulos principales es la siguiente (o su equivalente en el idioma que tengamos configurado en nuestro perfil de _Jira_):
+
+![](/images/qap/jira/00.png)
+
 La información que se puede aportar de cada módulo, presente en la cabecera, es la siguiente:
 
 * [**Cuadros de Mandos**](1-dashboards): Desde este módulo se puede acceder, modificar, buscar y eliminar los cuadros de mandos presentes en la herramienta. Estos, son totalmente personalizables con una serie de gadgets ya instalados.
