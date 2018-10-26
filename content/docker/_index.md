@@ -1,12 +1,14 @@
 ---
-title: Docker
+title: Docker Best Practices
 slug: docker
 pre: "<i class='fab fa-docker'></i> "
 chapter: true
 ---
 
-### Guía de referencia de
+# Docker Best Practices
 
-# Docker
+## Índice
 
-Guía de uso de docker para desarrollo.
+1. [Contexto](1-contexto)
+2. [Dockerfile](2-dockerfile)
+3. [Docker Compose](3-docker-compose)
