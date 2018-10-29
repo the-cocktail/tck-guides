@@ -96,8 +96,8 @@ VOLUME /var/lib/mysql
 Es recomendable utilizar usuarios que no tengan permisos de _root_. También se puede controlar desde el _docker-compose.yml_.
 
 ```Dockerfile
-ARG USR=deploys
-RUN useradd -ms /bin/bash -u 1000 ${USR}
+ARG DEPLOY_USR=deploys
+RUN useradd -ms /bin/bash -u 1000 ${DEPLOY_USR}
 USER ${DEPLOY_USR}
 ```
 
