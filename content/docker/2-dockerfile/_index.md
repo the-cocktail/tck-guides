@@ -71,6 +71,18 @@ Definir las variables de entorno necesarias.
 ENV GOPATH=/go
 ```
 
+### Definir _locale_ del sistema
+
+Generar la _locale_ del sistema para evitar problemas de _encoding_. Por ejemplo:
+
+```Dockerfile
+RUN echo "es_ES.UTF-8 UTF-8" > /etc/locale.gen \
+ && locale-gen es_ES.UTF-8
+
+ENV LANG es_ES.UTF-8
+ENV LANGUAGE es_ES:es
+```
+
 ### Definir los volúmenes
 
 Definir los volúmenes que van a necesitar ser montados.
