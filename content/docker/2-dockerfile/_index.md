@@ -6,7 +6,13 @@ chapter: false
 
 ### Utilizar imágenes base oficiales
 
-Al definir un _Dockerfile_, seleccionar una imagen oficial desde los registros de _Docker_.
+Al definir un _Dockerfile_, seleccionar una imagen oficial desde los registros de _Docker_:
+
+![](/images/docker/debian_image.png)
+
+```Dockerfile
+FROM debian
+```
 
 ### Ignorar ficheros innecesarios o sensibles
 
@@ -63,6 +69,18 @@ Definir las variables de entorno necesarias.
 
 ```Dockerfile
 ENV GOPATH=/go
+```
+
+### Definir _locale_ del sistema
+
+Generar la _locale_ del sistema para evitar problemas de _encoding_. Por ejemplo:
+
+```Dockerfile
+RUN echo "es_ES.UTF-8 UTF-8" > /etc/locale.gen \
+ && locale-gen es_ES.UTF-8
+
+ENV LANG es_ES.UTF-8
+ENV LANGUAGE es_ES:es
 ```
 
 ### Definir los volúmenes
