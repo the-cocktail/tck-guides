@@ -6,7 +6,13 @@ chapter: false
 
 ### Utilizar imágenes base oficiales
 
-Al definir un _Dockerfile_, seleccionar una imagen oficial desde los registros de _Docker_.
+Al definir un _Dockerfile_, seleccionar una imagen oficial desde los registros de _Docker_:
+
+![](/images/docker/debian_image.png)
+
+```Dockerfile
+FROM debian
+```
 
 ### Ignorar ficheros innecesarios o sensibles
 
