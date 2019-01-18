@@ -41,7 +41,7 @@ pre: "<i class='fa fa-file-text-o'></i>"
 
   ```ruby
     before do
-      stub_request(:any, "www.example.com").to_return(body: "foo", status: 200)
+      stub_request(:any, 'www.example.com').to_return(body: 'foo', status: 200)
     end
   ```
 
@@ -55,8 +55,8 @@ Un test unitario comprueba una funcionalidad concreta, por ejemplo, de un métod
 RSpec.describe User, type: :model do
   let(:user) { create(:user, name: 'Jhon', last_name: 'Doe') }
 
-  describe "#full_name" do
-     it { expect{user.full_name}.to eq('Jhon Doe') }
+  describe '#full_name' do
+     it { expect(user.full_name).to eq('Jhon Doe') }
   end
 end
 ```
@@ -67,12 +67,14 @@ Un test funcional es algo más complejo y se ve implicada con la interacción de
 
 ```ruby
 RSpec.describe ShoppingCart, type: :model do
-  describe "#total_price" do
-    it "returns an integer" do
-      products = ProductsService.run
-      shopping_cart = ShoppingCart.new(products)
-      expect{shopping_cart.total_price}.to be_a(Integer)
-    end
+  let(:products) { ProductsService.run }
+  let(:user) { create(:user, first_name: 'Jhon', last_name: 'Doe') }
+  let(:cart) { ShoppingCart.new(user, products) }
+
+  describe '#total_price' do
+    subject { cart.total_price }
+
+    it { is_expected.to be_a(Integer) }
   end
 end
 ```
@@ -86,19 +88,19 @@ Una buena practica y recomendada a la hora de testear modelos sería testear rel
 ```ruby
 RSpec.describe User, type: :model do
 
-  describe "Relationships" do
+  describe 'Relationships' do
     it { is_expected.to have_one(:profile).dependent(:destroy) }
   end
 
-  describe "Validations" do
+  describe 'Validations' do
     it { is_expected.to validate_presence_of(:mail) }
     it { is_expected.to validate_uniqueness_of(:nif) }
   end
 
-  describe "#unsubscribe" do
+  describe '#unsubscribe' do
     let(:user) { User.create(name: 'user', mail: 'user@mail.com') }
 
-    context "when user is unsubscribe successfully" do
+    context 'when user is unsubscribed successfully' do
       it { expect(user.unsubscribe).to be_truthy }
     end
   end
@@ -111,19 +113,31 @@ end
 ```ruby
 RSpec.describe UserController, type: :controller do
 
-  describe "POST #create" do
-    context "with valid params" do
-      before do
-        post :create, params: { mail: "user@mail.com", password: "12345678" }
+  describe 'POST #create' do
+    subject { post :create, params: { mail: mail, password: password } }
+
+    context 'with valid params' do
+      let(:mail) { 'user@mail.com' }
+      let(:password) { '12345678' }
+
+      it { is_expected.to change(User.count).by(1) }
+
+      it do
+        subject
+        expect(response).to have_http_status(200)
       end
-      it { expect(response).to eq have_http_status(200) }
     end
 
-    context "with invalid params" do
-      before do
-        post :create, params: { mail: "invalid_format", password: "12345678" }
+    context 'with invalid params' do
+      let(:mail) { 'invalid_format' }
+      let(:password) { '12345678' }
+
+      it { is_expected.to change(User.count).by(0) }
+
+      it do
+        subject
+        expect(response).to render_template(:new)
       end
-      it { expect(response).to eq render_template(:new) }
     end
   end
 
