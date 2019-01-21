@@ -143,3 +143,44 @@ RSpec.describe UserController, type: :controller do
 
 end
 ```
+
+### 2.3.- Rutas
+
+```ruby
+RSpec.describe ProvidersController, type: :routing do
+
+  describe 'routing' do
+
+    it 'routes to #index' do
+      expect(get: '/providers').to route_to('providers#index')
+    end
+
+    it 'routes to #show' do
+      expect(get: '/providers/1').to route_to('providers#show', id: '1')
+    end
+
+    it 'routes to #new' do
+      expect(get: '/providers/new').to route_to('providers#new')
+    end
+
+    it 'routes to #create via POST' do
+      expect(post: '/providers').to route_to(
+        controller: 'providers',
+        action:     'create'
+      )
+    end
+
+    it 'routes to #update via PUT' do
+      expect(put: '/providers/1').to route_to('providers#update', id: '1')
+    end
+
+    it 'routes to #update via PATCH' do
+      expect(patch: '/providers/1').to route_to('providers#update', id: '1')
+    end
+
+    it 'routes to #destroy via DELETE' do
+      expect(delete: '/providers/1').to route_to('providers#destroy', id: '1')
+    end
+  end
+end
+```
