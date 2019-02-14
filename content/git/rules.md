@@ -10,21 +10,18 @@ pre: "<i class='fa fa-list-alt'></i> "
 Recomendamos encarecidamente no usar clientes gráficos hasta no tener un control total de los comandos básicos en consola.
 
 Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente las acciones. Puede haber clientes que implementen ciertas acciones de forma distinta a la que esperamos, ocasionando situaciones inesperadas.
+
 ## Ramas
 
 * Escribe los nombre en inglés y sólo con letras y números, nada de acentos, ñ's, # o caracteres que puedan dar problemas.
 
+* Agrupa las ramas en función del tipo de trabajo, para eso, nombra la rama empezando con el tipo y /, por ejemplo **feature/**, **bugfix/**, **hotfix/**, etc.
+
+  **NOTA**: Mantener la consistencia del proyecto, revisar las agrupaciones que se están usando ya para no crear nuevas.
+
 * Usa **guiones** para separar palabras.
 
-* Usa nombres **cortos** y **descriptivos**:
-
-  ```bash
-  # bien
-  $ git checkout -b oauth-migration
-
-  # poco preciso
-  $ git checkout -b login_fix
-  ```
+* Usa nombres **cortos** y **descriptivos**
 
 * Siempre que sea posible, añade el número de ticket:
 
@@ -34,15 +31,6 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
   ```
 
   **NOTA**: Si no hay número de ticket, es un buen indicador de que debería de haber un ticket, créalo.
-
-* Agrupa las ramas en función del tipo de trabajo, para eso, nombra la rama empezando con el tipo y /, por ejemplo **feature/** para nuevas funcionalidades y **fix/** para correcciones:
-
-  ```bash
-  $ git checkout -b feature/oauth-migration
-  $ git checkout -b fix/text-error
-  ```
-
-  **NOTA**: Mantener la consistencia del proyecto, revisar las agrupaciones que se están usando ya para no crear nuevas.
 
 * Para grandes funcionalidades en las que van a trabajar varias personas, crear una rama específica y crear subcarpetas para las distintas tareas:
 
@@ -55,20 +43,9 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
   $ git checkout -b feature-redesign/front
   ```
 
-* Cuidado con crear múltiples anidaciones ya que puede bloquear ramas. Si existe la rama **feature/oauth-migration** y se crea la rama **feature/oauth-migration/front**, la primera será un directorio para Git y no se podrá hacer checkout a ella.
+ **NOTA** Cuidado con crear múltiples anidaciones ya que puede bloquear ramas. Si existe la rama **feature/oauth-migration** y se crea la rama **feature/oauth-migration/front**, la primera será un directorio para Git y no se podrá hacer checkout a ella.
 
-* Borra tus ramas personales en local y del repositorio remoto cuando acabes de trabajar en una tarea y ya esté mergeada a master, a no ser que exista alguna razón para mantenerla. Mantengamos los repositorios limpios, ¿acaso no borras tus ramas en casa?
-
-  Consejo: Borra siempre las ramas locales desde master con -d, en el caso de no estar mergeadas no te dejará.
-
-  ```bash
-  # Borrar la rama local
-  $ git branch -d feature/oauth-migration
-  # Borrar la rama remota
-  $ git push origin :feature/oauth-migration
-  ```
-
-  Puedes listar las ramas mergeadas en master con:
+* Borra tus ramas personales en local y del repositorio remoto cuando acabes de trabajar en una tarea y ya esté mergeada a master, a no ser que exista alguna razón para mantenerla. Mantengamos los repositorios limpios, ¿acaso no borras tus ramas en casa? Puedes listar las ramas mergeadas en master con:
 
   ```bash
   $ git branch --merged master | grep -v "\* master"`
@@ -79,6 +56,8 @@ Antes de usar un cliente gráfico, debemos de investigar qué hacen internamente
   ```bash
   $ git remote prune origin
   ```
+
+  **CONSEJO**: Borra siempre las ramas locales desde master con -d, en el caso de no estar mergeadas no te dejará.
 
 ## _Commits_
 

@@ -75,33 +75,6 @@ Pasos para la revisión:
 
 Debemos de sacar tiempo para poder realizar revisiones de _pull request_ ya que es nuestra mejor herramienta tanto para presentar desarrollos con mejor calidad como para fomentar el aprendizaje y generar discusión para la mejora de código.
 
-#### Plantillas
-
-Todos los proyectos deben de contener las siguientes plantilla _pull requests_ en una carpeta .github. Si aplica también se puede hacer una para _issues_.
-
-Plantilla para _pull requests_, fichero **PULL_REQUEST_TEMPLATE.md**:
-
-```md
-[Ticket de referencia](SUSTITUIR_POR_URL_DE_TICKET)
-
-## Resumen
-
-Escribir aquí un resumen o listado breve de cosas que añade o cambia esta PR. Utilizar una check list para seguir el progreso.
-
-- [X] Tarea 1.
-- [ ] Tarea 2.
-- [ ] Tarea 3.
-
-## Pruebas
-
-Ejemplos de como probar los cambios: pasos para replicar un problema, snippets de código para ejecutar en consola...
-
-## Despliegue
-
-Escribir aquí qué comandos y consideraciones que son necesarios para su despliegue (por ejemplo, borrar caché).
-Si no hace falta ejecutar nada, se puede borrar esta parte.
-```
-
 #### Vida de una _Pull Request_
 
 Las _pull request_ no son un recordatorio o un log de funcionalidades en desarrollo. Cuando se crea una _pull request_ se debe tener la convicción de que el código cumple con la funcionalidad definida y se generá una discusión para su aprobación.
