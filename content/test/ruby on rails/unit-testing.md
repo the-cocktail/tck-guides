@@ -88,8 +88,14 @@ Los test unitarios deben ser lo mas sencillo posible y solo se debe comprobar la
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject(:user) { create(:user, first_name: "Jhon", last_name: "Doe") }
-  it { expect(user.full_name).to eq "Jhon Doe" }
+  let(:user) { create(:user, first_name: 'Jhon', last_name: 'Doe') }
+
+  describe '#full_name' do
+    subject { user.full_name }
+
+    it { is_expected.to be_a(String) }
+    it { is_expected.to eq('Jhon Doe') }
+  end
 end
 ```
 
@@ -99,11 +105,21 @@ Los test funcionales implican interacción con otras clases o modulos.
 require 'rails_helper'
 
 RSpec.describe ShoppingCart, type: :model do
-  describe "#total_price" do
-    products = ProductsService.run
-    expect(ShoppingCart.new(products).total_price).to be_a(Integer)
+  let(:products) { ProductsService.run }
+  let(:user) { create(:user, first_name: 'Jhon', last_name: 'Doe') }
+  let(:cart) { ShoppingCart.new(user, products) }
+
+  describe '#total_price' do
+    subject { cart.total_price }
+
+    it { is_expected.to be_a(Integer) }
   end
-  expect(shopping_cart.full_name).to eq "Jhon Doe" }
+
+  describe '#full_name' do
+    subject { cart.full_name }
+
+    it { is_expected.to eq('Jhon Doe') }
+  end
 end
 ```
 Al estar invocando el método de otra clase estariamos probando el funcionamiento de ProductsService y ShoppingCart.
@@ -111,9 +127,22 @@ Al estar invocando el método de otra clase estariamos probando el funcionamient
 ### Method Stubs
 Para que nuestros test sean mas sencillos y rápidos al ejecutarlos en muchos casos es mejor utilizar Stubs.
 ```ruby
-it "#publish" do
-  allow(user).to receive(:role) { 'publisher' }
-  expect(user.publish(post)).to eq true
+describe '#publish' do
+  before { allow(user).to receive(:role) { role } }
+
+  subject { user.publish(post) }
+
+  context 'when the user is publisher' do
+    let(:role) { 'publisher' }
+
+    it { is_expected.to be true }
+  end
+
+  context 'when the user is not publisher' do
+    let(:role) { nil }
+
+    it { is_expected.to be false }
+  end
 end
 ```
 Si no utilizamos un Stub debemos conocer la lógica de como un usuario obtiene el rol publisher y esto haria nuestro test mas dificil de leer y mas lento al ejecutarse.
@@ -122,15 +151,16 @@ Si no utilizamos un Stub debemos conocer la lógica de como un usuario obtiene e
 En nuestros test no deberiamos hacer llamadas http a servicios externos, lo que queremos probar es que nuestra lógica de negocio funciona correctamente no el servicio externo.
 Para esto se puede utilizar la gema [webmock](https://github.com/bblimke/webmock) o [VCR](https://github.com/vcr/vcr).
 ```ruby
-context "with unauthorized access" do
+subject(:response) { Net::HTTP.get('www.example.com', '/') }
+
+context 'with unauthorized access' do
   before {
-    stub_request(:any, "www.example.com")
-      .to_return(body: "foo", status: 200)
+    stub_request(:any, 'www.example.com')
+      .to_return(body: 'foo', status: 200)
   }
 
-  it "" do
-    response = Net::HTTP.get("www.example.com", '/')
-    expect(response.body).to eq "foo"
+  it 'returns foo' do
+    expect(response.body).to eq('foo')
   end
 end
 ```

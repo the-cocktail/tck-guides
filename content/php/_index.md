@@ -17,4 +17,4 @@ Estas normas deberían ser de obligado cumplimiento para nuevos proyectos así c
 * [IDE]({{%relref "ide.md" %}})
 * [code Standard]({{%relref "codestandard.md" %}})
 * [composer]({{%relref "composer.md" %}})
-* [Rules]({{%relref "rules.md" %}})
+* [Rules]({{%relref "php/rules.md" %}})
