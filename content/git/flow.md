@@ -96,6 +96,16 @@ Escribir aquí un resumen o listado breve de cosas que añade o cambia esta PR. 
 - [ ] Tarea 2.
 - [ ] Tarea 3.
 
+Este desarrollo incluye:
+
+- [ ] Tests:
+        Funcionales:
+        Unitarios:
+        End-to-end:
+- [ ] Documentación: [url](url_a_la_documentación)
+        Confluence: [url](url_a_la_documentación)
+        Funcional: [url](url_a_la_documentación)
+
 ## Pruebas
 
 Ejemplos de como probar los cambios: pasos para replicar un problema, snippets de código para ejecutar en consola...
