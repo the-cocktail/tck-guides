@@ -15,8 +15,8 @@ Cucumber es un framework test de alto nivel, el cual esta diseñado para poder r
 
 Cucumber permite testear la aplicación desde la perspectiva del usuario y en algunos casos eso significa tener que lidiar con elementos de la interfaz de usuario impulsados por JavaScript. Cucumber hace esto iniciando un navegador en segundo plano y lleva a cabo las interacciones que realizaria el usuario: hacer clic en links o botones, rellenar formularios, etc. Tienes que saber que Cucumber no se usa para hacer test unitarios, pero es perfecto para testear las interacciones que un usuario realiza.
 
-[Documentación](https://github.com/cucumber/cucumber-rails)
-[Wiki](https://github.com/cucumber/cucumber/wiki)
+* [Repo](https://github.com/cucumber/cucumber-rails)
+* [Documentación](https://cucumber.io/docs)
 
 ## 2.- Descripción
 
@@ -148,7 +148,9 @@ Poltergeist es un driver de PhantomJS para Capybara.
 
 [Documentación](https://github.com/teampoltergeist/poltergeist)
 
-Para configurar Poltergeist añadir en features/support/env.rb:
+**ATENCIÓN**: Tal y como se indica [dentro de la documentación anterior](https://github.com/teampoltergeist/poltergeist#installing-phantomjs) debemos tener instalado el binario de PhantomJS en el entorno que ejecuta los tests.
+
+Para configurar Poltergeist añadir en _features/support/env.rb_:
 ```ruby
 require 'capybara/poltergeist'
 
@@ -159,7 +161,7 @@ Capybara.server_port = "3000"
 Capybara.javascript_driver = :poltergeist
 ```
 
-Para poder realizar los test levantando un navegador hay que añadir la etiqueta @javascript en la definición de los escenarios. Al correr cada uno de los test que contenga esta etiqueta se simulará la funcionalidad con su código Javascript necesario.
+Para poder realizar los test levantando un navegador **hay que añadir la etiqueta @javascript en la definición de los escenarios**. Al correr cada uno de los test que contenga esta etiqueta se simulará la funcionalidad con su código Javascript necesario.
 
 Aunque en esta guía se recomiendo el uso de Poltergeist, existen otros drivers como Selenium que permite levantar un navegador real y puede ser bastante útil en el caso de que se desee realizar pruebas en un navegador en concreto.
 
