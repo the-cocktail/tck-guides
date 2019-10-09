@@ -15,8 +15,8 @@ Cucumber es un framework test de alto nivel, el cual esta diseñado para poder r
 
 Cucumber permite testear la aplicación desde la perspectiva del usuario y en algunos casos eso significa tener que lidiar con elementos de la interfaz de usuario impulsados por JavaScript. Cucumber hace esto iniciando un navegador en segundo plano y lleva a cabo las interacciones que realizaria el usuario: hacer clic en links o botones, rellenar formularios, etc. Tienes que saber que Cucumber no se usa para hacer test unitarios, pero es perfecto para testear las interacciones que un usuario realiza.
 
-[Documentación](https://github.com/cucumber/cucumber-rails)
-[Wiki](https://github.com/cucumber/cucumber/wiki)
+* [Repo](https://github.com/cucumber/cucumber-rails)
+* [Documentación](https://cucumber.io/docs)
 
 ## 2.- Descripción
 
