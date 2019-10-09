@@ -148,7 +148,9 @@ Poltergeist es un driver de PhantomJS para Capybara.
 
 [Documentación](https://github.com/teampoltergeist/poltergeist)
 
-Para configurar Poltergeist añadir en features/support/env.rb:
+**ATENCIÓN**: Tal y como se indica [dentro de la documentación anterior](https://github.com/teampoltergeist/poltergeist#installing-phantomjs) debemos tener instalado el binario de PhantomJS en el entorno que ejecuta los tests.
+
+Para configurar Poltergeist añadir en _features/support/env.rb_:
 ```ruby
 require 'capybara/poltergeist'
 
@@ -159,7 +161,7 @@ Capybara.server_port = "3000"
 Capybara.javascript_driver = :poltergeist
 ```
 
-Para poder realizar los test levantando un navegador hay que añadir la etiqueta @javascript en la definición de los escenarios. Al correr cada uno de los test que contenga esta etiqueta se simulará la funcionalidad con su código Javascript necesario.
+Para poder realizar los test levantando un navegador **hay que añadir la etiqueta @javascript en la definición de los escenarios**. Al correr cada uno de los test que contenga esta etiqueta se simulará la funcionalidad con su código Javascript necesario.
 
 Aunque en esta guía se recomiendo el uso de Poltergeist, existen otros drivers como Selenium que permite levantar un navegador real y puede ser bastante útil en el caso de que se desee realizar pruebas en un navegador en concreto.
 
