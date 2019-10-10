@@ -7,12 +7,16 @@ pre: "<i class='fa fa-wrench'></i> "
 
 Antes de ponernos a trabajar con ningún repositorio, debemos de configurar las opciones generales de Git para nuestro flujo de trabajo.
 
+### Configura tu identidad
+
 * Configura nombre y correo asociados a los commits:
 
   ```bash
   $ git config --global user.name ‘Nombre’
   $ git config --global user.email ‘usuario@dominio.com’
   ```
+
+### Configura algunas opciones
 
 * Configuramos las opciones por defecto para pull y merge.
 
@@ -33,3 +37,17 @@ Con **_branch.autosetuprebase always_** forzamos que el comando **git pull** hag
   	merge = refs/heads/master
   	rebase = true
   ```
+
+### Plantilla (_template_) para las _Pull Requests_
+
+  * Añade en el fichero `.github/pull_request_template.md` del proyecto la [plantilla para las _pull requests_](http://guides.the-cocktail.com/git/flujo/#plantillas). De esta forma todas las _pull requests_ que se generen en el proyecto tendrán la misma estructura lo que ayudará a unificar criterios y facilitar las revisiones.
+
+### Hooks
+
+Con el fin de ayudarnos a revisar antes de hacer un _commit_, un _push_, etc, podemos añadir hooks de ayuda por defecto en nuestros proyectos:
+
+* Validaciones _staging_ (nuevas ramas, merges).
+* Avisos de higiene (borrar ramas ya mergeadas a master).
+* Avisos de mantenimiento (ramas desactualizadas).
+
+Los hooks no deben depender del proyecto, sólo al propio repositorio, por lo tanto hooks que pasen pruebas, formateos y demás que dependan del stack de cada uno, deberan de ser gestionados personalmente. [Aqui](https://github.com/the-cocktail/tools/tree/master/git_hooks) puedes encontrar una guía de instalación y algunos _hooks_ interesantes.
