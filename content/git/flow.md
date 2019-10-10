@@ -75,12 +75,12 @@ Pasos para la revisión:
 
 Debemos de sacar tiempo para poder realizar revisiones de _pull request_ ya que es nuestra mejor herramienta tanto para presentar desarrollos con mejor calidad como para fomentar el aprendizaje y generar discusión para la mejora de código.
 
+
 #### Plantillas
 
-Todos los proyectos deben de contener las siguientes plantilla _pull requests_ en una carpeta .github. Si aplica también se puede hacer una para _issues_.
+Los proyectos deben de contener la siguiente plantilla para las _pull requests_ dentro de su carpeta _.github_ (si aplica también se puede añadir otra plantilla para las _issues_ del proyecto).
 
-Plantilla para _pull requests_, fichero **PULL_REQUEST_TEMPLATE.md**:
-
+Plantilla para _pull requests_ (añadir al **fichero _.github/pull_request_template.md_** del proyecto):
 ```md
 [Ticket de referencia](SUSTITUIR_POR_URL_DE_TICKET)
 
@@ -94,6 +94,17 @@ Escribir aquí un resumen o listado breve de cosas que añade o cambia esta PR. 
 - [ ] Tarea 2.
 - [ ] Tarea 3.
 
+<!--
+Este desarrollo incluye:
+
+- [ ] Tests:
+        Funcionales:
+        Unitarios:
+        End-to-end:
+- [ ] Documentación: [url](url_a_la_documentación)
+        Confluence: [url](url_a_la_documentación)
+        Funcional: [url](url_a_la_documentación)
+-->
 
 ## Pruebas
 
