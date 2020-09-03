@@ -11,7 +11,7 @@ pre: "<i class='fa fa-folder-open'></i> "
 2. Escribir __historias de usuario__ de esas funcionalidades,
 3. Implementar los __tests de integración__ de las historias de usuario.
 
-En un proyecto que ya está funcionando y en el que por tanto no vamos a hacer [TDD](tdd), el objetivo es añadir [tests de integración](#test-de-integraci%C3%B3n) para __funcionalidades críticas__ y así evitar [regresiones](#regresi%C3%B3n).
+En un proyecto que ya está funcionando y en el que por tanto no vamos a hacer [TDD](tdd), el objetivo es añadir [tests de integración](#test-de-integraci%C3%B3n) para __funcionalidades críticas__ y así evitar [regresiones](/test/glosario/#regresi%C3%B3n).
 
 Idealmente es el cliente o en su defecto el [_Product Owner_](#product-owner) quien debe identificar dichas funcionalidades y escribir [historias de usuario](#historia-de-usuario) que el equipo de desarrollo se encargará de implementar como [especificaciones ejecutables](#especificaci%C3%B3n-ejecutable) en forma de [tests de integración](#test-de-integraci%C3%B3n).
 
